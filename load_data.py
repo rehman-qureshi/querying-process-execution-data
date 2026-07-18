@@ -32,7 +32,7 @@ def load_events_logs(file_path):
     df = pd.read_csv(buffer)
     
     # To save processing time, we read the preprocessed CSV file instead of the XES file. The CSV file is assumed to be in the same directory as this script.
-    ##df = pd.read_csv("bpic19_invoice_before_gr_all_cases.csv")
+    #df = pd.read_csv("bpic19_invoice_before_gr_all_cases.csv")
 
     return df
 #-------------------------------------------
