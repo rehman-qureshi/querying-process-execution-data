@@ -99,16 +99,29 @@ def compute_average_time_function(event_logs,constraints):
         
         #if isConform is True then conforming_traces, otherwise violating_traces 
         if isConform:
-            conforming_traces[case_id] = trace
-                                      
+            
             unary_matching = trace[trace["concept:name"].isin(activation_unary)] 
             binary_matching = trace[trace["concept:name"].isin(activation_binary)]
+            
+            # Also add data condition, i.e., filter out those conform cases where amount is less than 1000 euros
+            numerical_value=binary_matching["Cumulative net worth (EUR)"].iloc[0]
+            try:
+                numerical_value = float(numerical_value)
+            except (ValueError, TypeError):
+                numerical_value = None
 
-            if not unary_matching.empty and not binary_matching.empty:
-                timestamp_unary=pd.to_datetime(unary_matching.iloc[0]["time:timestamp"])
-                timestamp_binary=pd.to_datetime(binary_matching.iloc[0]["time:timestamp"])
-                completion_time=(timestamp_binary-timestamp_unary).total_seconds()
-                completion_time_per_trace[case_id]=completion_time    
+            if numerical_value is not None:
+                
+                if numerical_value>1000:    
+                    conforming_traces[case_id] = trace
+                    
+                    if not unary_matching.empty and not binary_matching.empty:
+                        timestamp_unary=pd.to_datetime(unary_matching.iloc[0]["time:timestamp"])
+                        timestamp_binary=pd.to_datetime(binary_matching.iloc[0]["time:timestamp"])
+                        completion_time=(timestamp_binary-timestamp_unary).total_seconds()
+                        completion_time_per_trace[case_id]=completion_time    
+                else:
+                    violating_traces[case_id] = trace                
         else:
             violating_traces[case_id] = trace
     # Display the result

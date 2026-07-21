@@ -8,7 +8,7 @@ from io import StringIO
 #----------------------------------------
 def load_events_logs(file_path):
     # Read XES file
-    LOG = pm4py.read_xes(file_path)
+    """LOG = pm4py.read_xes(file_path)
     # ALWAYS convert explicitly
     df = pm4py.convert_to_dataframe(LOG)
     # sort:
@@ -29,10 +29,10 @@ def load_events_logs(file_path):
     df.to_csv(buffer, index=False)
     buffer.seek(0)
 
-    df = pd.read_csv(buffer)
+    df = pd.read_csv(buffer)"""
     
     # To save processing time, we read the preprocessed CSV file instead of the XES file. The CSV file is assumed to be in the same directory as this script.
-    #df = pd.read_csv("bpic19_invoice_before_gr_all_cases.csv")
+    df = pd.read_csv("bpic19_invoice_before_gr_all_cases.csv")
 
     return df
 #-------------------------------------------
