@@ -1,42 +1,72 @@
-
-import sys
-from load_data import load_data_function 
+import argparse
 import warnings
-from compute_average_time import compute_average_time_function
 
-# Ignore warnings related to rustxes when reading XES files
+from execute_declarative_representation import (
+    execute_declarative_representation_function,
+)
+from load_data import load_data_function
+
+
 warnings.filterwarnings(
     "ignore",
     message=r".*rustxes.*"
 )
-# Main function to load data and check conformance
-if __name__ == "__main__":
-
-    if len(sys.argv) != 3:
-        print("Usage: python driver.py <events_logs_path> <declarative_constraints_path>")
-        sys.exit(1)
-
-    events_logs_path = sys.argv[1]
-    declarative_constraints_path = sys.argv[2]
 
 
-    event_logs, declarative_constraints = load_data_function(events_logs_path, declarative_constraints_path)
+def main() -> None:
+    """Load the input files and run selected business questions."""
+    parser = argparse.ArgumentParser(
+        description="Query process execution data using declarative constraints."
+    )
+    parser.add_argument(
+        "process_execution_data_path",
+        help="Path to the input XES event log.",
+    )
+    parser.add_argument(
+        "declarative_repository_path",
+        help="Path to the constraints JSON file.",
+    )
+    args = parser.parse_args()
 
-    # Display declarative constraints so that user can select which constraints to use for the analysis.
+    process_execution_data, declarative_constraints = load_data_function(
+        args.process_execution_data_path,
+        args.declarative_repository_path,
+    )
+
+    # Display the declarative form of each configured question.
     if declarative_constraints:
-        print("\nDeclarative Constraints:")
+        print("\nDeclarative Representation of each business question:")
         for constraint in declarative_constraints:
-            if constraint.get("type")=="Unary":
-             print(f"{constraint['id']}. {constraint['template']}({{{', '.join(constraint['activity'])}}}) ")
-            else:
-             print(f"{constraint['id']}. {constraint['template']}({{{', '.join(constraint['source'])}}}, {{{', '.join(constraint['target'])}}}) ")
-    
-    # Research Question - Q1: How long does it take for the procurement process to clear an invoice on average?
-    average_time=0.00
-    id_list=["C1","C10"]
-    
-    selected_constraints = [constraint for constraint in declarative_constraints if constraint["id"] in id_list]
-    print(f"Selected constraints are {selected_constraints}")
-    average_time=compute_average_time_function(event_logs,selected_constraints) 
-    print(f"How long does it take for the procurement process to clear an invoice on average? {average_time}")
-    
+            print(
+                f"{constraint['id']}: "
+                f"{{{constraint['template']}({constraint['source']}, "
+                f"{constraint['target']})[{constraint['subscript']}]}}"
+            )
+
+    while True:
+        selected_option = input(
+            "\nEnter the ID of the business question to run, or e to exit: "
+        ).strip()
+
+        if selected_option == "e":
+            print("Exiting the program ...")
+            break
+
+        constraint = next(
+            (
+                item
+                for item in declarative_constraints
+                if item["id"] == selected_option
+            ),
+            None,
+        )
+        if constraint is None:
+            print("Invalid ID for a business question. Please try again.")
+            continue
+
+        print(f"You selected Business Question: {selected_option}")
+        execute_declarative_representation_function(process_execution_data, constraint)
+
+
+if __name__ == "__main__":
+    main()
