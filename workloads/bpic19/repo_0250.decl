@@ -1,0 +1,278 @@
+activity Block Purchase Order Item
+activity Cancel Goods Receipt
+activity Cancel Invoice Receipt
+activity Cancel Subsequent Invoice
+activity Change Approval for Purchase Order
+activity Change Currency
+activity Change Delivery Indicator
+activity Change Final Invoice Indicator
+activity Change Price
+activity Change Quantity
+activity Change Storage Location
+activity Change payment term
+activity Clear Invoice
+activity Create Purchase Order Item
+activity Create Purchase Requisition Item
+activity Delete Purchase Order Item
+activity Reactivate Purchase Order Item
+activity Receive Order Confirmation
+activity Record Goods Receipt
+activity Record Invoice Receipt
+activity Record Subsequent Invoice
+activity Release Purchase Order
+activity Release Purchase Requisition
+activity Remove Payment Block
+activity Set Payment Block
+activity Update Order Confirmation
+activity Vendor creates debit memo
+activity Vendor creates invoice
+Response[Create Purchase Requisition Item, Create Purchase Order Item] | | |
+Response[Receive Order Confirmation, Record Goods Receipt] | | |
+Response[Release Purchase Order, Change Approval for Purchase Order] | | |
+Response[Vendor creates invoice, Record Invoice Receipt] | | |
+Alternate Response[Create Purchase Requisition Item, Create Purchase Order Item] | | |
+Alternate Response[Receive Order Confirmation, Record Goods Receipt] | | |
+Alternate Response[Record Subsequent Invoice, Clear Invoice] | | |
+Alternate Response[Release Purchase Order, Change Approval for Purchase Order] | | |
+Alternate Response[Vendor creates invoice, Record Invoice Receipt] | | |
+Chain Response[Create Purchase Requisition Item, Create Purchase Order Item] | | |
+Precedence[Create Purchase Order Item, Change Approval for Purchase Order] | | |
+Precedence[Create Purchase Order Item, Change Quantity] | | |
+Precedence[Create Purchase Order Item, Record Invoice Receipt] | | |
+Precedence[Create Purchase Order Item, Vendor creates invoice] | | |
+Precedence[Record Goods Receipt, Clear Invoice] | | |
+Precedence[Record Goods Receipt, Remove Payment Block] | | |
+Precedence[Record Invoice Receipt, Clear Invoice] | | |
+Precedence[Record Invoice Receipt, Remove Payment Block] | | |
+Precedence[Vendor creates debit memo, Cancel Subsequent Invoice] | | |
+Precedence[Vendor creates invoice, Clear Invoice] | | |
+Precedence[Vendor creates invoice, Record Invoice Receipt] | | |
+Precedence[Vendor creates invoice, Remove Payment Block] | | |
+Alternate Precedence[Create Purchase Order Item, Record Goods Receipt] | | |
+Alternate Precedence[Create Purchase Order Item, Record Subsequent Invoice] | | |
+Alternate Precedence[Create Purchase Order Item, Vendor creates invoice] | | |
+Alternate Precedence[Record Goods Receipt, Cancel Subsequent Invoice] | | |
+Alternate Precedence[Record Goods Receipt, Clear Invoice] | | |
+Alternate Precedence[Record Goods Receipt, Record Subsequent Invoice] | | |
+Alternate Precedence[Record Goods Receipt, Remove Payment Block] | | |
+Alternate Precedence[Record Invoice Receipt, Clear Invoice] | | |
+Alternate Precedence[Record Invoice Receipt, Record Subsequent Invoice] | | |
+Alternate Precedence[Record Invoice Receipt, Remove Payment Block] | | |
+Alternate Precedence[Vendor creates debit memo, Cancel Subsequent Invoice] | | |
+Alternate Precedence[Vendor creates invoice, Clear Invoice] | | |
+Alternate Precedence[Vendor creates invoice, Record Invoice Receipt] | | |
+Alternate Precedence[Vendor creates invoice, Remove Payment Block] | | |
+Chain Precedence[Create Purchase Requisition Item, Release Purchase Requisition] | | |
+Responded Existence[Change Quantity, Record Goods Receipt] | | |
+Responded Existence[Clear Invoice, Record Goods Receipt] | | |
+Responded Existence[Clear Invoice, Record Invoice Receipt] | | |
+Responded Existence[Clear Invoice, Vendor creates invoice] | | |
+Responded Existence[Receive Order Confirmation, Record Goods Receipt] | | |
+Responded Existence[Record Goods Receipt, Vendor creates invoice] | | |
+Responded Existence[Record Invoice Receipt, Record Goods Receipt] | | |
+Responded Existence[Record Subsequent Invoice, Record Goods Receipt] | | |
+Responded Existence[Release Purchase Order, Change Approval for Purchase Order] | | |
+Responded Existence[Remove Payment Block, Record Invoice Receipt] | | |
+Responded Existence[Remove Payment Block, Vendor creates invoice] | | |
+Responded Existence[Set Payment Block, Vendor creates invoice] | | |
+Responded Existence[Update Order Confirmation, Create Purchase Order Item] | | |
+Responded Existence[Vendor creates invoice, Record Invoice Receipt] | | |
+Not Co-Existence[Block Purchase Order Item, Release Purchase Order] | | |
+Not Co-Existence[Cancel Goods Receipt, Block Purchase Order Item] | | |
+Not Co-Existence[Cancel Goods Receipt, Change Currency] | | |
+Not Co-Existence[Cancel Goods Receipt, Change payment term] | | |
+Not Co-Existence[Cancel Goods Receipt, Receive Order Confirmation] | | |
+Not Co-Existence[Cancel Goods Receipt, Record Subsequent Invoice] | | |
+Not Co-Existence[Cancel Goods Receipt, Update Order Confirmation] | | |
+Not Co-Existence[Cancel Invoice Receipt, Block Purchase Order Item] | | |
+Not Co-Existence[Cancel Invoice Receipt, Change Storage Location] | | |
+Not Co-Existence[Cancel Invoice Receipt, Change payment term] | | |
+Not Co-Existence[Cancel Invoice Receipt, Reactivate Purchase Order Item] | | |
+Not Co-Existence[Cancel Invoice Receipt, Update Order Confirmation] | | |
+Not Co-Existence[Cancel Subsequent Invoice, Change Approval for Purchase Order] | | |
+Not Co-Existence[Cancel Subsequent Invoice, Reactivate Purchase Order Item] | | |
+Not Co-Existence[Cancel Subsequent Invoice, Set Payment Block] | | |
+Not Co-Existence[Change Approval for Purchase Order, Change Currency] | | |
+Not Co-Existence[Change Approval for Purchase Order, Change Delivery Indicator] | | |
+Not Co-Existence[Change Price, Change Storage Location] | | |
+Not Co-Existence[Change Price, Change payment term] | | |
+Not Co-Existence[Change Price, Release Purchase Order] | | |
+Not Co-Existence[Change Price, Set Payment Block] | | |
+Not Co-Existence[Change Quantity, Cancel Invoice Receipt] | | |
+Not Co-Existence[Change Quantity, Change Approval for Purchase Order] | | |
+Not Co-Existence[Change Quantity, Change Storage Location] | | |
+Not Co-Existence[Change Quantity, Change payment term] | | |
+Not Co-Existence[Change Quantity, Reactivate Purchase Order Item] | | |
+Not Co-Existence[Change Storage Location, Cancel Subsequent Invoice] | | |
+Not Co-Existence[Change Storage Location, Change Currency] | | |
+Not Co-Existence[Change Storage Location, Change payment term] | | |
+Not Co-Existence[Change Storage Location, Receive Order Confirmation] | | |
+Not Co-Existence[Clear Invoice, Block Purchase Order Item] | | |
+Not Co-Existence[Clear Invoice, Cancel Goods Receipt] | | |
+Not Co-Existence[Clear Invoice, Change Storage Location] | | |
+Not Co-Existence[Clear Invoice, Record Subsequent Invoice] | | |
+Not Co-Existence[Create Purchase Order Item, Reactivate Purchase Order Item] | | |
+Not Co-Existence[Create Purchase Order Item, Release Purchase Order] | | |
+Not Co-Existence[Create Purchase Requisition Item, Change Price] | | |
+Not Co-Existence[Create Purchase Requisition Item, Delete Purchase Order Item] | | |
+Not Co-Existence[Create Purchase Requisition Item, Record Subsequent Invoice] | | |
+Not Co-Existence[Delete Purchase Order Item, Cancel Subsequent Invoice] | | |
+Not Co-Existence[Delete Purchase Order Item, Change Final Invoice Indicator] | | |
+Not Co-Existence[Delete Purchase Order Item, Reactivate Purchase Order Item] | | |
+Not Co-Existence[Delete Purchase Order Item, Release Purchase Order] | | |
+Not Co-Existence[Delete Purchase Order Item, Update Order Confirmation] | | |
+Not Co-Existence[Delete Purchase Order Item, Vendor creates debit memo] | | |
+Not Co-Existence[Reactivate Purchase Order Item, Cancel Goods Receipt] | | |
+Not Co-Existence[Reactivate Purchase Order Item, Change Final Invoice Indicator] | | |
+Not Co-Existence[Reactivate Purchase Order Item, Record Subsequent Invoice] | | |
+Not Co-Existence[Reactivate Purchase Order Item, Update Order Confirmation] | | |
+Not Co-Existence[Receive Order Confirmation, Change Quantity] | | |
+Not Co-Existence[Receive Order Confirmation, Release Purchase Order] | | |
+Not Co-Existence[Record Goods Receipt, Cancel Goods Receipt] | | |
+Not Co-Existence[Record Goods Receipt, Cancel Invoice Receipt] | | |
+Not Co-Existence[Record Goods Receipt, Change payment term] | | |
+Not Co-Existence[Record Goods Receipt, Release Purchase Requisition] | | |
+Not Co-Existence[Record Goods Receipt, Set Payment Block] | | |
+Not Co-Existence[Record Goods Receipt, Update Order Confirmation] | | |
+Not Co-Existence[Record Invoice Receipt, Change payment term] | | |
+Not Co-Existence[Record Invoice Receipt, Record Subsequent Invoice] | | |
+Not Co-Existence[Record Invoice Receipt, Release Purchase Requisition] | | |
+Not Co-Existence[Record Invoice Receipt, Update Order Confirmation] | | |
+Not Co-Existence[Record Subsequent Invoice, Change Currency] | | |
+Not Co-Existence[Record Subsequent Invoice, Release Purchase Requisition] | | |
+Not Co-Existence[Release Purchase Order, Change Storage Location] | | |
+Not Co-Existence[Release Purchase Requisition, Change Currency] | | |
+Not Co-Existence[Release Purchase Requisition, Change Quantity] | | |
+Not Co-Existence[Remove Payment Block, Change Delivery Indicator] | | |
+Not Co-Existence[Remove Payment Block, Reactivate Purchase Order Item] | | |
+Not Co-Existence[Remove Payment Block, Release Purchase Order] | | |
+Not Co-Existence[Set Payment Block, Change Currency] | | |
+Not Co-Existence[Set Payment Block, Change Storage Location] | | |
+Not Co-Existence[Set Payment Block, Record Subsequent Invoice] | | |
+Not Co-Existence[Update Order Confirmation, Change Final Invoice Indicator] | | |
+Not Co-Existence[Update Order Confirmation, Change payment term] | | |
+Not Co-Existence[Update Order Confirmation, Record Subsequent Invoice] | | |
+Not Co-Existence[Vendor creates debit memo, Block Purchase Order Item] | | |
+Not Co-Existence[Vendor creates invoice, Delete Purchase Order Item] | | |
+Not Co-Existence[Vendor creates invoice, Record Subsequent Invoice] | | |
+Not Co-Existence[Vendor creates invoice, Release Purchase Order] | | |
+Not Co-Existence[Vendor creates invoice, Update Order Confirmation] | | |
+Not Succession[Block Purchase Order Item, Change Final Invoice Indicator] | | |
+Not Succession[Block Purchase Order Item, Change Storage Location] | | |
+Not Succession[Block Purchase Order Item, Change payment term] | | |
+Not Succession[Cancel Goods Receipt, Change Currency] | | |
+Not Succession[Cancel Goods Receipt, Change Price] | | |
+Not Succession[Cancel Goods Receipt, Change Storage Location] | | |
+Not Succession[Cancel Goods Receipt, Change payment term] | | |
+Not Succession[Cancel Invoice Receipt, Block Purchase Order Item] | | |
+Not Succession[Cancel Invoice Receipt, Cancel Goods Receipt] | | |
+Not Succession[Cancel Invoice Receipt, Change Delivery Indicator] | | |
+Not Succession[Cancel Invoice Receipt, Change Final Invoice Indicator] | | |
+Not Succession[Cancel Invoice Receipt, Record Subsequent Invoice] | | |
+Not Succession[Cancel Invoice Receipt, Release Purchase Requisition] | | |
+Not Succession[Cancel Invoice Receipt, Update Order Confirmation] | | |
+Not Succession[Cancel Invoice Receipt, Vendor creates debit memo] | | |
+Not Succession[Cancel Invoice Receipt, Vendor creates invoice] | | |
+Not Succession[Cancel Subsequent Invoice, Set Payment Block] | | |
+Not Succession[Change Approval for Purchase Order, Cancel Subsequent Invoice] | | |
+Not Succession[Change Approval for Purchase Order, Change Currency] | | |
+Not Succession[Change Approval for Purchase Order, Change payment term] | | |
+Not Succession[Change Approval for Purchase Order, Record Subsequent Invoice] | | |
+Not Succession[Change Delivery Indicator, Block Purchase Order Item] | | |
+Not Succession[Change Delivery Indicator, Change Currency] | | |
+Not Succession[Change Delivery Indicator, Change payment term] | | |
+Not Succession[Change Price, Change Approval for Purchase Order] | | |
+Not Succession[Change Price, Release Purchase Requisition] | | |
+Not Succession[Change Quantity, Create Purchase Requisition Item] | | |
+Not Succession[Change Quantity, Reactivate Purchase Order Item] | | |
+Not Succession[Change Storage Location, Cancel Goods Receipt] | | |
+Not Succession[Change Storage Location, Cancel Subsequent Invoice] | | |
+Not Succession[Change Storage Location, Change Final Invoice Indicator] | | |
+Not Succession[Change Storage Location, Release Purchase Order] | | |
+Not Succession[Clear Invoice, Block Purchase Order Item] | | |
+Not Succession[Clear Invoice, Cancel Invoice Receipt] | | |
+Not Succession[Clear Invoice, Change Price] | | |
+Not Succession[Clear Invoice, Create Purchase Order Item] | | |
+Not Succession[Clear Invoice, Create Purchase Requisition Item] | | |
+Not Succession[Clear Invoice, Receive Order Confirmation] | | |
+Not Succession[Clear Invoice, Record Goods Receipt] | | |
+Not Succession[Clear Invoice, Vendor creates debit memo] | | |
+Not Succession[Create Purchase Order Item, Release Purchase Requisition] | | |
+Not Succession[Create Purchase Requisition Item, Cancel Goods Receipt] | | |
+Not Succession[Create Purchase Requisition Item, Change payment term] | | |
+Not Succession[Create Purchase Requisition Item, Reactivate Purchase Order Item] | | |
+Not Succession[Delete Purchase Order Item, Block Purchase Order Item] | | |
+Not Succession[Delete Purchase Order Item, Change Currency] | | |
+Not Succession[Delete Purchase Order Item, Change Storage Location] | | |
+Not Succession[Delete Purchase Order Item, Change payment term] | | |
+Not Succession[Delete Purchase Order Item, Create Purchase Requisition Item] | | |
+Not Succession[Delete Purchase Order Item, Reactivate Purchase Order Item] | | |
+Not Succession[Delete Purchase Order Item, Record Invoice Receipt] | | |
+Not Succession[Delete Purchase Order Item, Release Purchase Order] | | |
+Not Succession[Delete Purchase Order Item, Remove Payment Block] | | |
+Not Succession[Delete Purchase Order Item, Set Payment Block] | | |
+Not Succession[Delete Purchase Order Item, Update Order Confirmation] | | |
+Not Succession[Reactivate Purchase Order Item, Block Purchase Order Item] | | |
+Not Succession[Reactivate Purchase Order Item, Change Final Invoice Indicator] | | |
+Not Succession[Receive Order Confirmation, Cancel Goods Receipt] | | |
+Not Succession[Receive Order Confirmation, Cancel Subsequent Invoice] | | |
+Not Succession[Receive Order Confirmation, Change Currency] | | |
+Not Succession[Receive Order Confirmation, Change payment term] | | |
+Not Succession[Receive Order Confirmation, Create Purchase Order Item] | | |
+Not Succession[Record Goods Receipt, Change Approval for Purchase Order] | | |
+Not Succession[Record Goods Receipt, Change Currency] | | |
+Not Succession[Record Goods Receipt, Change Delivery Indicator] | | |
+Not Succession[Record Goods Receipt, Change payment term] | | |
+Not Succession[Record Goods Receipt, Create Purchase Order Item] | | |
+Not Succession[Record Goods Receipt, Reactivate Purchase Order Item] | | |
+Not Succession[Record Goods Receipt, Receive Order Confirmation] | | |
+Not Succession[Record Goods Receipt, Vendor creates debit memo] | | |
+Not Succession[Record Invoice Receipt, Block Purchase Order Item] | | |
+Not Succession[Record Invoice Receipt, Cancel Invoice Receipt] | | |
+Not Succession[Record Invoice Receipt, Change Final Invoice Indicator] | | |
+Not Succession[Record Invoice Receipt, Change Price] | | |
+Not Succession[Record Invoice Receipt, Create Purchase Requisition Item] | | |
+Not Succession[Record Invoice Receipt, Receive Order Confirmation] | | |
+Not Succession[Record Invoice Receipt, Record Subsequent Invoice] | | |
+Not Succession[Record Invoice Receipt, Release Purchase Requisition] | | |
+Not Succession[Record Invoice Receipt, Vendor creates invoice] | | |
+Not Succession[Record Subsequent Invoice, Change Storage Location] | | |
+Not Succession[Record Subsequent Invoice, Delete Purchase Order Item] | | |
+Not Succession[Record Subsequent Invoice, Record Invoice Receipt] | | |
+Not Succession[Release Purchase Order, Cancel Goods Receipt] | | |
+Not Succession[Release Purchase Order, Change payment term] | | |
+Not Succession[Release Purchase Requisition, Create Purchase Requisition Item] | | |
+Not Succession[Release Purchase Requisition, Reactivate Purchase Order Item] | | |
+Not Succession[Release Purchase Requisition, Record Subsequent Invoice] | | |
+Not Succession[Release Purchase Requisition, Remove Payment Block] | | |
+Not Succession[Release Purchase Requisition, Set Payment Block] | | |
+Not Succession[Release Purchase Requisition, Vendor creates debit memo] | | |
+Not Succession[Remove Payment Block, Block Purchase Order Item] | | |
+Not Succession[Remove Payment Block, Cancel Invoice Receipt] | | |
+Not Succession[Remove Payment Block, Cancel Subsequent Invoice] | | |
+Not Succession[Remove Payment Block, Change Currency] | | |
+Not Succession[Remove Payment Block, Change Quantity] | | |
+Not Succession[Remove Payment Block, Receive Order Confirmation] | | |
+Not Succession[Remove Payment Block, Record Goods Receipt] | | |
+Not Succession[Remove Payment Block, Release Purchase Order] | | |
+Not Succession[Remove Payment Block, Set Payment Block] | | |
+Not Succession[Remove Payment Block, Vendor creates invoice] | | |
+Not Succession[Set Payment Block, Block Purchase Order Item] | | |
+Not Succession[Set Payment Block, Cancel Invoice Receipt] | | |
+Not Succession[Set Payment Block, Cancel Subsequent Invoice] | | |
+Not Succession[Set Payment Block, Change Currency] | | |
+Not Succession[Set Payment Block, Change Delivery Indicator] | | |
+Not Succession[Set Payment Block, Change payment term] | | |
+Not Succession[Set Payment Block, Create Purchase Order Item] | | |
+Not Succession[Set Payment Block, Create Purchase Requisition Item] | | |
+Not Succession[Set Payment Block, Record Goods Receipt] | | |
+Not Succession[Set Payment Block, Record Subsequent Invoice] | | |
+Not Succession[Vendor creates debit memo, Create Purchase Requisition Item] | | |
+Not Succession[Vendor creates debit memo, Delete Purchase Order Item] | | |
+Not Succession[Vendor creates debit memo, Set Payment Block] | | |
+Not Succession[Vendor creates invoice, Change Approval for Purchase Order] | | |
+Not Succession[Vendor creates invoice, Change Currency] | | |
+Not Succession[Vendor creates invoice, Change Quantity] | | |
+Not Succession[Vendor creates invoice, Create Purchase Order Item] | | |
+Not Succession[Vendor creates invoice, Create Purchase Requisition Item] | | |
+Not Succession[Vendor creates invoice, Release Purchase Requisition] | | |

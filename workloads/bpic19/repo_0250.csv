@@ -1,0 +1,251 @@
+﻿rule_id,template,activity_1,activity_2,support,coverage,semantics
+R00391,Response,Create Purchase Requisition Item,Create Purchase Order Item,1.0,0.1928,every A is eventually followed by B
+R00476,Response,Receive Order Confirmation,Record Goods Receipt,0.9607,0.1426,every A is eventually followed by B
+R00571,Response,Release Purchase Order,Change Approval for Purchase Order,1.0,0.0018,every A is eventually followed by B
+R00748,Response,Vendor creates invoice,Record Invoice Receipt,0.9899,0.9084,every A is eventually followed by B
+R01147,Alternate Response,Create Purchase Requisition Item,Create Purchase Order Item,1.0,0.1928,"every A is followed by B, with no other A in between"
+R01232,Alternate Response,Receive Order Confirmation,Record Goods Receipt,0.9605,0.1426,"every A is followed by B, with no other A in between"
+R01308,Alternate Response,Record Subsequent Invoice,Clear Invoice,0.958,0.0007,"every A is followed by B, with no other A in between"
+R01327,Alternate Response,Release Purchase Order,Change Approval for Purchase Order,1.0,0.0018,"every A is followed by B, with no other A in between"
+R01504,Alternate Response,Vendor creates invoice,Record Invoice Receipt,0.9769,0.9084,"every A is followed by B, with no other A in between"
+R01903,Chain Response,Create Purchase Requisition Item,Create Purchase Order Item,0.9896,0.1928,every A is immediately followed by B
+R02623,Precedence,Create Purchase Order Item,Change Approval for Purchase Order,0.9638,0.0103,every B is preceded by an earlier A
+R02628,Precedence,Create Purchase Order Item,Change Quantity,1.0,0.0693,every B is preceded by an earlier A
+R02637,Precedence,Create Purchase Order Item,Record Invoice Receipt,1.0,0.9131,every B is preceded by an earlier A
+R02645,Precedence,Create Purchase Order Item,Vendor creates invoice,0.9864,0.9084,every B is preceded by an earlier A
+R02766,Precedence,Record Goods Receipt,Clear Invoice,0.9962,0.7949,every B is preceded by an earlier A
+R02776,Precedence,Record Goods Receipt,Remove Payment Block,0.9896,0.2458,every B is preceded by an earlier A
+R02793,Precedence,Record Invoice Receipt,Clear Invoice,0.9977,0.7949,every B is preceded by an earlier A
+R02803,Precedence,Record Invoice Receipt,Remove Payment Block,0.9991,0.2458,every B is preceded by an earlier A
+R02973,Precedence,Vendor creates debit memo,Cancel Subsequent Invoice,0.9931,0.002,every B is preceded by an earlier A
+R03009,Precedence,Vendor creates invoice,Clear Invoice,0.9978,0.7949,every B is preceded by an earlier A
+R03016,Precedence,Vendor creates invoice,Record Invoice Receipt,0.9848,0.9131,every B is preceded by an earlier A
+R03020,Precedence,Vendor creates invoice,Remove Payment Block,0.9988,0.2458,every B is preceded by an earlier A
+R03392,Alternate Precedence,Create Purchase Order Item,Record Goods Receipt,0.9658,0.9441,"every B is preceded by A, with no other B in between"
+R03394,Alternate Precedence,Create Purchase Order Item,Record Subsequent Invoice,0.958,0.0007,"every B is preceded by A, with no other B in between"
+R03401,Alternate Precedence,Create Purchase Order Item,Vendor creates invoice,0.9651,0.9084,"every B is preceded by A, with no other B in between"
+R03513,Alternate Precedence,Record Goods Receipt,Cancel Subsequent Invoice,0.9677,0.002,"every B is preceded by A, with no other B in between"
+R03522,Alternate Precedence,Record Goods Receipt,Clear Invoice,0.9639,0.7949,"every B is preceded by A, with no other B in between"
+R03529,Alternate Precedence,Record Goods Receipt,Record Subsequent Invoice,0.951,0.0007,"every B is preceded by A, with no other B in between"
+R03532,Alternate Precedence,Record Goods Receipt,Remove Payment Block,0.9739,0.2458,"every B is preceded by A, with no other B in between"
+R03549,Alternate Precedence,Record Invoice Receipt,Clear Invoice,0.9784,0.7949,"every B is preceded by A, with no other B in between"
+R03556,Alternate Precedence,Record Invoice Receipt,Record Subsequent Invoice,0.958,0.0007,"every B is preceded by A, with no other B in between"
+R03559,Alternate Precedence,Record Invoice Receipt,Remove Payment Block,0.9937,0.2458,"every B is preceded by A, with no other B in between"
+R03729,Alternate Precedence,Vendor creates debit memo,Cancel Subsequent Invoice,0.9816,0.002,"every B is preceded by A, with no other B in between"
+R03765,Alternate Precedence,Vendor creates invoice,Clear Invoice,0.965,0.7949,"every B is preceded by A, with no other B in between"
+R03772,Alternate Precedence,Vendor creates invoice,Record Invoice Receipt,0.9515,0.9131,"every B is preceded by A, with no other B in between"
+R03776,Alternate Precedence,Vendor creates invoice,Remove Payment Block,0.9844,0.2458,"every B is preceded by A, with no other B in between"
+R04179,Chain Precedence,Create Purchase Requisition Item,Release Purchase Requisition,1.0,0.002,every B is immediately preceded by A
+R04796,Responded Existence,Change Quantity,Record Goods Receipt,0.9851,0.0693,"if A occurs, B occurs in the same case (any order)"
+R04877,Responded Existence,Clear Invoice,Record Goods Receipt,0.9967,0.7949,"if A occurs, B occurs in the same case (any order)"
+R04878,Responded Existence,Clear Invoice,Record Invoice Receipt,0.9978,0.7949,"if A occurs, B occurs in the same case (any order)"
+R04886,Responded Existence,Clear Invoice,Vendor creates invoice,0.9978,0.7949,"if A occurs, B occurs in the same case (any order)"
+R05012,Responded Existence,Receive Order Confirmation,Record Goods Receipt,0.9621,0.1426,"if A occurs, B occurs in the same case (any order)"
+R05048,Responded Existence,Record Goods Receipt,Vendor creates invoice,0.9608,0.9441,"if A occurs, B occurs in the same case (any order)"
+R05067,Responded Existence,Record Invoice Receipt,Record Goods Receipt,0.9985,0.9131,"if A occurs, B occurs in the same case (any order)"
+R05094,Responded Existence,Record Subsequent Invoice,Record Goods Receipt,0.993,0.0007,"if A occurs, B occurs in the same case (any order)"
+R05107,Responded Existence,Release Purchase Order,Change Approval for Purchase Order,1.0,0.0018,"if A occurs, B occurs in the same case (any order)"
+R05176,Responded Existence,Remove Payment Block,Record Invoice Receipt,0.9993,0.2458,"if A occurs, B occurs in the same case (any order)"
+R05183,Responded Existence,Remove Payment Block,Vendor creates invoice,0.9991,0.2458,"if A occurs, B occurs in the same case (any order)"
+R05210,Responded Existence,Set Payment Block,Vendor creates invoice,1.0,0.0002,"if A occurs, B occurs in the same case (any order)"
+R05224,Responded Existence,Update Order Confirmation,Create Purchase Order Item,1.0,0.001,"if A occurs, B occurs in the same case (any order)"
+R05284,Responded Existence,Vendor creates invoice,Record Invoice Receipt,1.0,0.9084,"if A occurs, B occurs in the same case (any order)"
+R05312,Not Co-Existence,Block Purchase Order Item,Release Purchase Order,1.0,0.0015,"if A occurs, B does not occur in the same case"
+R05319,Not Co-Existence,Cancel Goods Receipt,Block Purchase Order Item,0.9994,0.0071,"if A occurs, B does not occur in the same case"
+R05323,Not Co-Existence,Cancel Goods Receipt,Change Currency,1.0,0.0071,"if A occurs, B does not occur in the same case"
+R05329,Not Co-Existence,Cancel Goods Receipt,Change payment term,1.0,0.0071,"if A occurs, B does not occur in the same case"
+R05335,Not Co-Existence,Cancel Goods Receipt,Receive Order Confirmation,0.9826,0.0071,"if A occurs, B does not occur in the same case"
+R05338,Not Co-Existence,Cancel Goods Receipt,Record Subsequent Invoice,1.0,0.0071,"if A occurs, B does not occur in the same case"
+R05343,Not Co-Existence,Cancel Goods Receipt,Update Order Confirmation,1.0,0.0071,"if A occurs, B does not occur in the same case"
+R05346,Not Co-Existence,Cancel Invoice Receipt,Block Purchase Order Item,0.9949,0.0269,"if A occurs, B does not occur in the same case"
+R05355,Not Co-Existence,Cancel Invoice Receipt,Change Storage Location,0.9979,0.0269,"if A occurs, B does not occur in the same case"
+R05356,Not Co-Existence,Cancel Invoice Receipt,Change payment term,1.0,0.0269,"if A occurs, B does not occur in the same case"
+R05361,Not Co-Existence,Cancel Invoice Receipt,Reactivate Purchase Order Item,0.9933,0.0269,"if A occurs, B does not occur in the same case"
+R05370,Not Co-Existence,Cancel Invoice Receipt,Update Order Confirmation,0.9968,0.0269,"if A occurs, B does not occur in the same case"
+R05376,Not Co-Existence,Cancel Subsequent Invoice,Change Approval for Purchase Order,0.9977,0.002,"if A occurs, B does not occur in the same case"
+R05388,Not Co-Existence,Cancel Subsequent Invoice,Reactivate Purchase Order Item,0.9954,0.002,"if A occurs, B does not occur in the same case"
+R05396,Not Co-Existence,Cancel Subsequent Invoice,Set Payment Block,0.9931,0.002,"if A occurs, B does not occur in the same case"
+R05404,Not Co-Existence,Change Approval for Purchase Order,Change Currency,0.9996,0.0103,"if A occurs, B does not occur in the same case"
+R05405,Not Co-Existence,Change Approval for Purchase Order,Change Delivery Indicator,0.9884,0.0103,"if A occurs, B does not occur in the same case"
+R05517,Not Co-Existence,Change Price,Change Storage Location,0.9942,0.044,"if A occurs, B does not occur in the same case"
+R05518,Not Co-Existence,Change Price,Change payment term,0.9997,0.044,"if A occurs, B does not occur in the same case"
+R05528,Not Co-Existence,Change Price,Release Purchase Order,0.9877,0.044,"if A occurs, B does not occur in the same case"
+R05531,Not Co-Existence,Change Price,Set Payment Block,0.9998,0.044,"if A occurs, B does not occur in the same case"
+R05537,Not Co-Existence,Change Quantity,Cancel Invoice Receipt,0.9564,0.0693,"if A occurs, B does not occur in the same case"
+R05539,Not Co-Existence,Change Quantity,Change Approval for Purchase Order,0.9521,0.0693,"if A occurs, B does not occur in the same case"
+R05544,Not Co-Existence,Change Quantity,Change Storage Location,0.9963,0.0693,"if A occurs, B does not occur in the same case"
+R05545,Not Co-Existence,Change Quantity,Change payment term,1.0,0.0693,"if A occurs, B does not occur in the same case"
+R05550,Not Co-Existence,Change Quantity,Reactivate Purchase Order Item,0.985,0.0693,"if A occurs, B does not occur in the same case"
+R05565,Not Co-Existence,Change Storage Location,Cancel Subsequent Invoice,1.0,0.0014,"if A occurs, B does not occur in the same case"
+R05567,Not Co-Existence,Change Storage Location,Change Currency,1.0,0.0014,"if A occurs, B does not occur in the same case"
+R05572,Not Co-Existence,Change Storage Location,Change payment term,1.0,0.0014,"if A occurs, B does not occur in the same case"
+R05578,Not Co-Existence,Change Storage Location,Receive Order Confirmation,0.9671,0.0014,"if A occurs, B does not occur in the same case"
+R05616,Not Co-Existence,Clear Invoice,Block Purchase Order Item,0.9991,0.7949,"if A occurs, B does not occur in the same case"
+R05617,Not Co-Existence,Clear Invoice,Cancel Goods Receipt,0.9943,0.7949,"if A occurs, B does not occur in the same case"
+R05626,Not Co-Existence,Clear Invoice,Change Storage Location,0.9986,0.7949,"if A occurs, B does not occur in the same case"
+R05635,Not Co-Existence,Clear Invoice,Record Subsequent Invoice,0.9992,0.7949,"if A occurs, B does not occur in the same case"
+R05658,Not Co-Existence,Create Purchase Order Item,Reactivate Purchase Order Item,0.9977,1.0,"if A occurs, B does not occur in the same case"
+R05663,Not Co-Existence,Create Purchase Order Item,Release Purchase Order,0.9982,1.0,"if A occurs, B does not occur in the same case"
+R05678,Not Co-Existence,Create Purchase Requisition Item,Change Price,0.9596,0.1928,"if A occurs, B does not occur in the same case"
+R05684,Not Co-Existence,Create Purchase Requisition Item,Delete Purchase Order Item,0.966,0.1928,"if A occurs, B does not occur in the same case"
+R05689,Not Co-Existence,Create Purchase Requisition Item,Record Subsequent Invoice,0.9997,0.1928,"if A occurs, B does not occur in the same case"
+R05700,Not Co-Existence,Delete Purchase Order Item,Cancel Subsequent Invoice,0.9999,0.0354,"if A occurs, B does not occur in the same case"
+R05704,Not Co-Existence,Delete Purchase Order Item,Change Final Invoice Indicator,1.0,0.0354,"if A occurs, B does not occur in the same case"
+R05712,Not Co-Existence,Delete Purchase Order Item,Reactivate Purchase Order Item,0.9611,0.0354,"if A occurs, B does not occur in the same case"
+R05717,Not Co-Existence,Delete Purchase Order Item,Release Purchase Order,0.9988,0.0354,"if A occurs, B does not occur in the same case"
+R05721,Not Co-Existence,Delete Purchase Order Item,Update Order Confirmation,0.9984,0.0354,"if A occurs, B does not occur in the same case"
+R05722,Not Co-Existence,Delete Purchase Order Item,Vendor creates debit memo,0.9952,0.0354,"if A occurs, B does not occur in the same case"
+R05725,Not Co-Existence,Reactivate Purchase Order Item,Cancel Goods Receipt,0.9898,0.0023,"if A occurs, B does not occur in the same case"
+R05731,Not Co-Existence,Reactivate Purchase Order Item,Change Final Invoice Indicator,1.0,0.0023,"if A occurs, B does not occur in the same case"
+R05743,Not Co-Existence,Reactivate Purchase Order Item,Record Subsequent Invoice,1.0,0.0023,"if A occurs, B does not occur in the same case"
+R05748,Not Co-Existence,Reactivate Purchase Order Item,Update Order Confirmation,0.998,0.0023,"if A occurs, B does not occur in the same case"
+R05760,Not Co-Existence,Receive Order Confirmation,Change Quantity,0.9723,0.1426,"if A occurs, B does not occur in the same case"
+R05771,Not Co-Existence,Receive Order Confirmation,Release Purchase Order,0.9994,0.1426,"if A occurs, B does not occur in the same case"
+R05779,Not Co-Existence,Record Goods Receipt,Cancel Goods Receipt,0.9964,0.9441,"if A occurs, B does not occur in the same case"
+R05780,Not Co-Existence,Record Goods Receipt,Cancel Invoice Receipt,0.9761,0.9441,"if A occurs, B does not occur in the same case"
+R05789,Not Co-Existence,Record Goods Receipt,Change payment term,1.0,0.9441,"if A occurs, B does not occur in the same case"
+R05799,Not Co-Existence,Record Goods Receipt,Release Purchase Requisition,0.9983,0.9441,"if A occurs, B does not occur in the same case"
+R05801,Not Co-Existence,Record Goods Receipt,Set Payment Block,0.9998,0.9441,"if A occurs, B does not occur in the same case"
+R05802,Not Co-Existence,Record Goods Receipt,Update Order Confirmation,0.999,0.9441,"if A occurs, B does not occur in the same case"
+R05816,Not Co-Existence,Record Invoice Receipt,Change payment term,1.0,0.9131,"if A occurs, B does not occur in the same case"
+R05824,Not Co-Existence,Record Invoice Receipt,Record Subsequent Invoice,0.9993,0.9131,"if A occurs, B does not occur in the same case"
+R05826,Not Co-Existence,Record Invoice Receipt,Release Purchase Requisition,0.9992,0.9131,"if A occurs, B does not occur in the same case"
+R05829,Not Co-Existence,Record Invoice Receipt,Update Order Confirmation,0.999,0.9131,"if A occurs, B does not occur in the same case"
+R05837,Not Co-Existence,Record Subsequent Invoice,Change Currency,1.0,0.0007,"if A occurs, B does not occur in the same case"
+R05853,Not Co-Existence,Record Subsequent Invoice,Release Purchase Requisition,1.0,0.0007,"if A occurs, B does not occur in the same case"
+R05869,Not Co-Existence,Release Purchase Order,Change Storage Location,0.995,0.0018,"if A occurs, B does not occur in the same case"
+R05891,Not Co-Existence,Release Purchase Requisition,Change Currency,1.0,0.002,"if A occurs, B does not occur in the same case"
+R05895,Not Co-Existence,Release Purchase Requisition,Change Quantity,0.9564,0.002,"if A occurs, B does not occur in the same case"
+R05919,Not Co-Existence,Remove Payment Block,Change Delivery Indicator,0.9832,0.2458,"if A occurs, B does not occur in the same case"
+R05929,Not Co-Existence,Remove Payment Block,Reactivate Purchase Order Item,0.9971,0.2458,"if A occurs, B does not occur in the same case"
+R05934,Not Co-Existence,Remove Payment Block,Release Purchase Order,0.9965,0.2458,"if A occurs, B does not occur in the same case"
+R05945,Not Co-Existence,Set Payment Block,Change Currency,1.0,0.0002,"if A occurs, B does not occur in the same case"
+R05950,Not Co-Existence,Set Payment Block,Change Storage Location,0.98,0.0002,"if A occurs, B does not occur in the same case"
+R05960,Not Co-Existence,Set Payment Block,Record Subsequent Invoice,1.0,0.0002,"if A occurs, B does not occur in the same case"
+R05974,Not Co-Existence,Update Order Confirmation,Change Final Invoice Indicator,1.0,0.001,"if A occurs, B does not occur in the same case"
+R05978,Not Co-Existence,Update Order Confirmation,Change payment term,1.0,0.001,"if A occurs, B does not occur in the same case"
+R05987,Not Co-Existence,Update Order Confirmation,Record Subsequent Invoice,0.9953,0.001,"if A occurs, B does not occur in the same case"
+R05994,Not Co-Existence,Vendor creates debit memo,Block Purchase Order Item,0.9944,0.0247,"if A occurs, B does not occur in the same case"
+R06036,Not Co-Existence,Vendor creates invoice,Delete Purchase Order Item,0.9985,0.9084,"if A occurs, B does not occur in the same case"
+R06041,Not Co-Existence,Vendor creates invoice,Record Subsequent Invoice,0.9993,0.9084,"if A occurs, B does not occur in the same case"
+R06042,Not Co-Existence,Vendor creates invoice,Release Purchase Order,0.9981,0.9084,"if A occurs, B does not occur in the same case"
+R06046,Not Co-Existence,Vendor creates invoice,Update Order Confirmation,0.999,0.9084,"if A occurs, B does not occur in the same case"
+R06054,Not Succession,Block Purchase Order Item,Change Final Invoice Indicator,1.0,0.0015,B never occurs after A
+R06057,Not Succession,Block Purchase Order Item,Change Storage Location,1.0,0.0015,B never occurs after A
+R06058,Not Succession,Block Purchase Order Item,Change payment term,1.0,0.0015,B never occurs after A
+R06079,Not Succession,Cancel Goods Receipt,Change Currency,1.0,0.0071,B never occurs after A
+R06082,Not Succession,Cancel Goods Receipt,Change Price,0.9555,0.0071,B never occurs after A
+R06084,Not Succession,Cancel Goods Receipt,Change Storage Location,0.9981,0.0071,B never occurs after A
+R06085,Not Succession,Cancel Goods Receipt,Change payment term,1.0,0.0071,B never occurs after A
+R06102,Not Succession,Cancel Invoice Receipt,Block Purchase Order Item,0.9997,0.0269,B never occurs after A
+R06103,Not Succession,Cancel Invoice Receipt,Cancel Goods Receipt,0.9983,0.0269,B never occurs after A
+R06107,Not Succession,Cancel Invoice Receipt,Change Delivery Indicator,0.9947,0.0269,B never occurs after A
+R06108,Not Succession,Cancel Invoice Receipt,Change Final Invoice Indicator,1.0,0.0269,B never occurs after A
+R06121,Not Succession,Cancel Invoice Receipt,Record Subsequent Invoice,0.9961,0.0269,B never occurs after A
+R06123,Not Succession,Cancel Invoice Receipt,Release Purchase Requisition,1.0,0.0269,B never occurs after A
+R06126,Not Succession,Cancel Invoice Receipt,Update Order Confirmation,1.0,0.0269,B never occurs after A
+R06127,Not Succession,Cancel Invoice Receipt,Vendor creates debit memo,0.9909,0.0269,B never occurs after A
+R06128,Not Succession,Cancel Invoice Receipt,Vendor creates invoice,0.9909,0.0269,B never occurs after A
+R06152,Not Succession,Cancel Subsequent Invoice,Set Payment Block,0.9954,0.002,B never occurs after A
+R06159,Not Succession,Change Approval for Purchase Order,Cancel Subsequent Invoice,0.9996,0.0103,B never occurs after A
+R06160,Not Succession,Change Approval for Purchase Order,Change Currency,1.0,0.0103,B never occurs after A
+R06166,Not Succession,Change Approval for Purchase Order,Change payment term,1.0,0.0103,B never occurs after A
+R06175,Not Succession,Change Approval for Purchase Order,Record Subsequent Invoice,1.0,0.0103,B never occurs after A
+R06210,Not Succession,Change Delivery Indicator,Block Purchase Order Item,0.9969,0.0088,B never occurs after A
+R06215,Not Succession,Change Delivery Indicator,Change Currency,1.0,0.0088,B never occurs after A
+R06220,Not Succession,Change Delivery Indicator,Change payment term,1.0,0.0088,B never occurs after A
+R06268,Not Succession,Change Price,Change Approval for Purchase Order,0.9941,0.044,B never occurs after A
+R06285,Not Succession,Change Price,Release Purchase Requisition,1.0,0.044,B never occurs after A
+R06304,Not Succession,Change Quantity,Create Purchase Requisition Item,1.0,0.0693,B never occurs after A
+R06306,Not Succession,Change Quantity,Reactivate Purchase Order Item,0.9924,0.0693,B never occurs after A
+R06319,Not Succession,Change Storage Location,Cancel Goods Receipt,0.9803,0.0014,B never occurs after A
+R06321,Not Succession,Change Storage Location,Cancel Subsequent Invoice,1.0,0.0014,B never occurs after A
+R06325,Not Succession,Change Storage Location,Change Final Invoice Indicator,1.0,0.0014,B never occurs after A
+R06338,Not Succession,Change Storage Location,Release Purchase Order,1.0,0.0014,B never occurs after A
+R06372,Not Succession,Clear Invoice,Block Purchase Order Item,1.0,0.7949,B never occurs after A
+R06374,Not Succession,Clear Invoice,Cancel Invoice Receipt,0.9884,0.7949,B never occurs after A
+R06380,Not Succession,Clear Invoice,Change Price,0.9997,0.7949,B never occurs after A
+R06384,Not Succession,Clear Invoice,Create Purchase Order Item,1.0,0.7949,B never occurs after A
+R06385,Not Succession,Clear Invoice,Create Purchase Requisition Item,1.0,0.7949,B never occurs after A
+R06388,Not Succession,Clear Invoice,Receive Order Confirmation,1.0,0.7949,B never occurs after A
+R06389,Not Succession,Clear Invoice,Record Goods Receipt,0.9988,0.7949,B never occurs after A
+R06397,Not Succession,Clear Invoice,Vendor creates debit memo,0.999,0.7949,B never occurs after A
+R06420,Not Succession,Create Purchase Order Item,Release Purchase Requisition,1.0,1.0,B never occurs after A
+R06427,Not Succession,Create Purchase Requisition Item,Cancel Goods Receipt,0.9973,0.1928,B never occurs after A
+R06437,Not Succession,Create Purchase Requisition Item,Change payment term,1.0,0.1928,B never occurs after A
+R06441,Not Succession,Create Purchase Requisition Item,Reactivate Purchase Order Item,0.9986,0.1928,B never occurs after A
+R06453,Not Succession,Delete Purchase Order Item,Block Purchase Order Item,0.9999,0.0354,B never occurs after A
+R06458,Not Succession,Delete Purchase Order Item,Change Currency,0.9999,0.0354,B never occurs after A
+R06463,Not Succession,Delete Purchase Order Item,Change Storage Location,0.9999,0.0354,B never occurs after A
+R06464,Not Succession,Delete Purchase Order Item,Change payment term,1.0,0.0354,B never occurs after A
+R06467,Not Succession,Delete Purchase Order Item,Create Purchase Requisition Item,1.0,0.0354,B never occurs after A
+R06468,Not Succession,Delete Purchase Order Item,Reactivate Purchase Order Item,0.9614,0.0354,B never occurs after A
+R06471,Not Succession,Delete Purchase Order Item,Record Invoice Receipt,0.9667,0.0354,B never occurs after A
+R06473,Not Succession,Delete Purchase Order Item,Release Purchase Order,0.9997,0.0354,B never occurs after A
+R06475,Not Succession,Delete Purchase Order Item,Remove Payment Block,0.9883,0.0354,B never occurs after A
+R06476,Not Succession,Delete Purchase Order Item,Set Payment Block,1.0,0.0354,B never occurs after A
+R06477,Not Succession,Delete Purchase Order Item,Update Order Confirmation,1.0,0.0354,B never occurs after A
+R06480,Not Succession,Reactivate Purchase Order Item,Block Purchase Order Item,0.9776,0.0023,B never occurs after A
+R06487,Not Succession,Reactivate Purchase Order Item,Change Final Invoice Indicator,1.0,0.0023,B never occurs after A
+R06508,Not Succession,Receive Order Confirmation,Cancel Goods Receipt,0.9992,0.1426,B never occurs after A
+R06510,Not Succession,Receive Order Confirmation,Cancel Subsequent Invoice,0.999,0.1426,B never occurs after A
+R06512,Not Succession,Receive Order Confirmation,Change Currency,1.0,0.1426,B never occurs after A
+R06518,Not Succession,Receive Order Confirmation,Change payment term,1.0,0.1426,B never occurs after A
+R06520,Not Succession,Receive Order Confirmation,Create Purchase Order Item,1.0,0.1426,B never occurs after A
+R06538,Not Succession,Record Goods Receipt,Change Approval for Purchase Order,0.9991,0.9441,B never occurs after A
+R06539,Not Succession,Record Goods Receipt,Change Currency,1.0,0.9441,B never occurs after A
+R06540,Not Succession,Record Goods Receipt,Change Delivery Indicator,0.9917,0.9441,B never occurs after A
+R06545,Not Succession,Record Goods Receipt,Change payment term,1.0,0.9441,B never occurs after A
+R06547,Not Succession,Record Goods Receipt,Create Purchase Order Item,1.0,0.9441,B never occurs after A
+R06550,Not Succession,Record Goods Receipt,Reactivate Purchase Order Item,0.9998,0.9441,B never occurs after A
+R06551,Not Succession,Record Goods Receipt,Receive Order Confirmation,0.9997,0.9441,B never occurs after A
+R06559,Not Succession,Record Goods Receipt,Vendor creates debit memo,0.9887,0.9441,B never occurs after A
+R06561,Not Succession,Record Invoice Receipt,Block Purchase Order Item,0.9998,0.9131,B never occurs after A
+R06563,Not Succession,Record Invoice Receipt,Cancel Invoice Receipt,0.9747,0.9131,B never occurs after A
+R06568,Not Succession,Record Invoice Receipt,Change Final Invoice Indicator,1.0,0.9131,B never occurs after A
+R06569,Not Succession,Record Invoice Receipt,Change Price,0.9895,0.9131,B never occurs after A
+R06575,Not Succession,Record Invoice Receipt,Create Purchase Requisition Item,1.0,0.9131,B never occurs after A
+R06578,Not Succession,Record Invoice Receipt,Receive Order Confirmation,0.9999,0.9131,B never occurs after A
+R06580,Not Succession,Record Invoice Receipt,Record Subsequent Invoice,0.9993,0.9131,B never occurs after A
+R06582,Not Succession,Record Invoice Receipt,Release Purchase Requisition,1.0,0.9131,B never occurs after A
+R06587,Not Succession,Record Invoice Receipt,Vendor creates invoice,0.9804,0.9131,B never occurs after A
+R06598,Not Succession,Record Subsequent Invoice,Change Storage Location,1.0,0.0007,B never occurs after A
+R06603,Not Succession,Record Subsequent Invoice,Delete Purchase Order Item,1.0,0.0007,B never occurs after A
+R06607,Not Succession,Record Subsequent Invoice,Record Invoice Receipt,0.951,0.0007,B never occurs after A
+R06616,Not Succession,Release Purchase Order,Cancel Goods Receipt,0.9824,0.0018,B never occurs after A
+R06626,Not Succession,Release Purchase Order,Change payment term,1.0,0.0018,B never occurs after A
+R06656,Not Succession,Release Purchase Requisition,Create Purchase Requisition Item,1.0,0.002,B never occurs after A
+R06658,Not Succession,Release Purchase Requisition,Reactivate Purchase Order Item,1.0,0.002,B never occurs after A
+R06662,Not Succession,Release Purchase Requisition,Record Subsequent Invoice,1.0,0.002,B never occurs after A
+R06664,Not Succession,Release Purchase Requisition,Remove Payment Block,0.9931,0.002,B never occurs after A
+R06665,Not Succession,Release Purchase Requisition,Set Payment Block,1.0,0.002,B never occurs after A
+R06667,Not Succession,Release Purchase Requisition,Vendor creates debit memo,1.0,0.002,B never occurs after A
+R06669,Not Succession,Remove Payment Block,Block Purchase Order Item,1.0,0.2458,B never occurs after A
+R06671,Not Succession,Remove Payment Block,Cancel Invoice Receipt,0.9728,0.2458,B never occurs after A
+R06672,Not Succession,Remove Payment Block,Cancel Subsequent Invoice,0.998,0.2458,B never occurs after A
+R06674,Not Succession,Remove Payment Block,Change Currency,1.0,0.2458,B never occurs after A
+R06678,Not Succession,Remove Payment Block,Change Quantity,0.9966,0.2458,B never occurs after A
+R06686,Not Succession,Remove Payment Block,Receive Order Confirmation,1.0,0.2458,B never occurs after A
+R06687,Not Succession,Remove Payment Block,Record Goods Receipt,0.9874,0.2458,B never occurs after A
+R06690,Not Succession,Remove Payment Block,Release Purchase Order,0.9993,0.2458,B never occurs after A
+R06692,Not Succession,Remove Payment Block,Set Payment Block,0.9997,0.2458,B never occurs after A
+R06695,Not Succession,Remove Payment Block,Vendor creates invoice,0.9923,0.2458,B never occurs after A
+R06696,Not Succession,Set Payment Block,Block Purchase Order Item,1.0,0.0002,B never occurs after A
+R06698,Not Succession,Set Payment Block,Cancel Invoice Receipt,0.96,0.0002,B never occurs after A
+R06699,Not Succession,Set Payment Block,Cancel Subsequent Invoice,0.98,0.0002,B never occurs after A
+R06701,Not Succession,Set Payment Block,Change Currency,1.0,0.0002,B never occurs after A
+R06702,Not Succession,Set Payment Block,Change Delivery Indicator,0.98,0.0002,B never occurs after A
+R06707,Not Succession,Set Payment Block,Change payment term,1.0,0.0002,B never occurs after A
+R06709,Not Succession,Set Payment Block,Create Purchase Order Item,1.0,0.0002,B never occurs after A
+R06710,Not Succession,Set Payment Block,Create Purchase Requisition Item,1.0,0.0002,B never occurs after A
+R06714,Not Succession,Set Payment Block,Record Goods Receipt,1.0,0.0002,B never occurs after A
+R06716,Not Succession,Set Payment Block,Record Subsequent Invoice,1.0,0.0002,B never occurs after A
+R06764,Not Succession,Vendor creates debit memo,Create Purchase Requisition Item,0.998,0.0247,B never occurs after A
+R06765,Not Succession,Vendor creates debit memo,Delete Purchase Order Item,0.9952,0.0247,B never occurs after A
+R06774,Not Succession,Vendor creates debit memo,Set Payment Block,0.9987,0.0247,B never occurs after A
+R06781,Not Succession,Vendor creates invoice,Change Approval for Purchase Order,0.9989,0.9084,B never occurs after A
+R06782,Not Succession,Vendor creates invoice,Change Currency,1.0,0.9084,B never occurs after A
+R06786,Not Succession,Vendor creates invoice,Change Quantity,0.98,0.9084,B never occurs after A
+R06790,Not Succession,Vendor creates invoice,Create Purchase Order Item,0.9864,0.9084,B never occurs after A
+R06791,Not Succession,Vendor creates invoice,Create Purchase Requisition Item,0.9997,0.9084,B never occurs after A
+R06799,Not Succession,Vendor creates invoice,Release Purchase Requisition,1.0,0.9084,B never occurs after A

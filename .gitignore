@@ -1,52 +1,22 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# event logs and caches (large, public: see data/README.md)
+data/*.csv
+*.npz
 
-# Virtual environments
-venv/
-env/
+# environments and Python caches
 .venv/
-.env/
+__pycache__/
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
+# outputs of local runs (the committed results live in results/)
+smoke/
+smoke_*
+out/
+runtime_*.csv
+runtime_*.pdf
+runtime_*.png
+*_env.json
+*_figE*.pdf
+*_figE*.png
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# IDE/editor settings
-.vscode/
-.idea/
-
-# Windows system files
+# OS files
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Python settings
-*.pyo
-*.pyd
-
-# Logs and temporary files
-*.log
-*.tmp
-*.bak
-
-# Pytest cache
-.pytest_cache/
-
-# Ignore all .xes files
-*.xes
-
-
-# Ignore all .csv files
-*.csv
-
-#Ignore all .png files
-*.png
-
-#Ignore all .pdf files
-*.pdf
+.DS_Store

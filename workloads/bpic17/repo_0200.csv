@@ -1,0 +1,201 @@
+﻿rule_id,template,activity_1,activity_2,support,coverage,semantics
+R00033,Response,A_Cancelled,O_Cancelled,0.9846,0.331,every A is eventually followed by B
+R00071,Response,A_Concept,A_Complete,0.9953,1.0,every A is eventually followed by B
+R00095,Response,A_Create Application,A_Concept,1.0,1.0,every A is eventually followed by B
+R00186,Response,A_Submitted,A_Complete,0.995,0.6482,every A is eventually followed by B
+R00187,Response,A_Submitted,A_Concept,1.0,0.6482,every A is eventually followed by B
+R00195,Response,A_Submitted,O_Create Offer,1.0,0.6482,every A is eventually followed by B
+R00196,Response,A_Submitted,O_Created,1.0,0.6482,every A is eventually followed by B
+R00237,Response,O_Accepted,A_Pending,1.0,0.5468,every A is eventually followed by B
+R00288,Response,O_Create Offer,O_Created,1.0,1.0,every A is eventually followed by B
+R00508,Response,W_Handle leads,A_Complete,0.9934,0.1109,every A is eventually followed by B
+R00623,Alternate Response,A_Concept,A_Complete,0.9953,1.0,"every A is followed by B, with no other A in between"
+R00636,Alternate Response,A_Concept,O_Sent (mail and online),0.9854,1.0,"every A is followed by B, with no other A in between"
+R00646,Alternate Response,A_Create Application,A_Complete,0.9953,1.0,"every A is followed by B, with no other A in between"
+R00680,Alternate Response,A_Denied,O_Refused,0.9912,0.1191,"every A is followed by B, with no other A in between"
+R00747,Alternate Response,A_Submitted,O_Create Offer,1.0,0.6482,"every A is followed by B, with no other A in between"
+R00789,Alternate Response,O_Accepted,A_Pending,1.0,0.5468,"every A is followed by B, with no other A in between"
+R00840,Alternate Response,O_Create Offer,O_Created,1.0,1.0,"every A is followed by B, with no other A in between"
+R01037,Alternate Response,W_Complete application,A_Complete,0.9966,0.6062,"every A is followed by B, with no other A in between"
+R01070,Alternate Response,W_Handle leads,O_Create Offer,1.0,0.1109,"every A is followed by B, with no other A in between"
+R01074,Alternate Response,W_Handle leads,O_Sent (mail and online),0.99,0.1109,"every A is followed by B, with no other A in between"
+R01115,Chain Response,A_Accepted,O_Create Offer,0.9998,1.0,every A is immediately followed by B
+R01173,Chain Response,A_Concept,A_Accepted,0.9997,1.0,every A is immediately followed by B
+R01232,Chain Response,A_Denied,O_Refused,0.9912,0.1191,every A is immediately followed by B
+R01341,Chain Response,O_Accepted,A_Pending,1.0,0.5468,every A is immediately followed by B
+R01392,Chain Response,O_Create Offer,O_Created,1.0,1.0,every A is immediately followed by B
+R01657,Precedence,A_Accepted,A_Complete,1.0,0.9953,every B is preceded by an earlier A
+R01661,Precedence,A_Accepted,A_Incomplete,1.0,0.4761,every B is preceded by an earlier A
+R01675,Precedence,A_Accepted,W_Call incomplete files,1.0,0.0844,every B is preceded by an earlier A
+R01716,Precedence,A_Complete,O_Returned,1.0,0.6909,every B is preceded by an earlier A
+R01720,Precedence,A_Complete,W_Call after offers,1.0,0.0108,every B is preceded by an earlier A
+R01721,Precedence,A_Complete,W_Call incomplete files,1.0,0.0844,every B is preceded by an earlier A
+R01730,Precedence,A_Concept,A_Incomplete,1.0,0.4761,every B is preceded by an earlier A
+R01733,Precedence,A_Concept,A_Validating,1.0,0.6941,every B is preceded by an earlier A
+R01735,Precedence,A_Concept,O_Cancelled,1.0,0.4977,every B is preceded by an earlier A
+R01745,Precedence,A_Concept,W_Complete application,1.0,0.6062,every B is preceded by an earlier A
+R01749,Precedence,A_Create Application,A_Cancelled,1.0,0.331,every B is preceded by an earlier A
+R01752,Precedence,A_Create Application,A_Denied,1.0,0.1191,every B is preceded by an earlier A
+R01753,Precedence,A_Create Application,A_Incomplete,1.0,0.4761,every B is preceded by an earlier A
+R01754,Precedence,A_Create Application,A_Pending,1.0,0.5468,every B is preceded by an earlier A
+R01757,Precedence,A_Create Application,O_Accepted,1.0,0.5468,every B is preceded by an earlier A
+R01784,Precedence,A_Denied,O_Refused,1.0,0.1181,every B is preceded by an earlier A
+R01869,Precedence,A_Validating,A_Incomplete,1.0,0.4761,every B is preceded by an earlier A
+R01882,Precedence,A_Validating,W_Call incomplete files,1.0,0.0844,every B is preceded by an earlier A
+R01893,Precedence,O_Accepted,A_Pending,1.0,0.5468,every B is preceded by an earlier A
+R01937,Precedence,O_Create Offer,A_Denied,1.0,0.1191,every B is preceded by an earlier A
+R01939,Precedence,O_Create Offer,A_Pending,1.0,0.5468,every B is preceded by an earlier A
+R01942,Precedence,O_Create Offer,O_Accepted,1.0,0.5468,every B is preceded by an earlier A
+R01946,Precedence,O_Create Offer,O_Returned,1.0,0.6909,every B is preceded by an earlier A
+R01948,Precedence,O_Create Offer,O_Sent (online only),1.0,0.0571,every B is preceded by an earlier A
+R01951,Precedence,O_Create Offer,W_Call incomplete files,1.0,0.0844,every B is preceded by an earlier A
+R01964,Precedence,O_Created,A_Validating,1.0,0.6941,every B is preceded by an earlier A
+R01966,Precedence,O_Created,O_Cancelled,1.0,0.4977,every B is preceded by an earlier A
+R01968,Precedence,O_Created,O_Refused,1.0,0.1181,every B is preceded by an earlier A
+R01971,Precedence,O_Created,O_Sent (online only),1.0,0.0571,every B is preceded by an earlier A
+R01974,Precedence,O_Created,W_Call incomplete files,1.0,0.0844,every B is preceded by an earlier A
+R01975,Precedence,O_Created,W_Complete application,0.9996,0.6062,every B is preceded by an earlier A
+R02008,Precedence,O_Returned,A_Pending,1.0,0.5468,every B is preceded by an earlier A
+R02020,Precedence,O_Returned,W_Call incomplete files,0.9692,0.0844,every B is preceded by an earlier A
+R02033,Precedence,O_Sent (mail and online),A_Validating,0.9885,0.6941,every B is preceded by an earlier A
+R02034,Precedence,O_Sent (mail and online),O_Accepted,0.989,0.5468,every B is preceded by an earlier A
+R02035,Precedence,O_Sent (mail and online),O_Cancelled,0.9506,0.4977,every B is preceded by an earlier A
+R02038,Precedence,O_Sent (mail and online),O_Refused,0.9871,0.1181,every B is preceded by an earlier A
+R02039,Precedence,O_Sent (mail and online),O_Returned,0.9895,0.6909,every B is preceded by an earlier A
+R02044,Precedence,O_Sent (mail and online),W_Complete application,0.9787,0.6062,every B is preceded by an earlier A
+R02046,Precedence,O_Sent (mail and online),W_Validate application,0.9831,0.3463,every B is preceded by an earlier A
+R02214,Alternate Precedence,A_Accepted,A_Pending,1.0,0.5468,"every B is preceded by A, with no other B in between"
+R02226,Alternate Precedence,A_Accepted,W_Call after offers,0.9971,0.0108,"every B is preceded by A, with no other B in between"
+R02258,Alternate Precedence,A_Complete,A_Denied,0.9899,0.1191,"every B is preceded by A, with no other B in between"
+R02272,Alternate Precedence,A_Complete,W_Call after offers,0.9971,0.0108,"every B is preceded by A, with no other B in between"
+R02273,Alternate Precedence,A_Complete,W_Call incomplete files,0.9515,0.0844,"every B is preceded by A, with no other B in between"
+R02283,Alternate Precedence,A_Concept,A_Pending,1.0,0.5468,"every B is preceded by A, with no other B in between"
+R02302,Alternate Precedence,A_Create Application,A_Complete,1.0,0.9953,"every B is preceded by A, with no other B in between"
+R02303,Alternate Precedence,A_Create Application,A_Concept,1.0,1.0,"every B is preceded by A, with no other B in between"
+R02319,Alternate Precedence,A_Create Application,W_Call incomplete files,0.9515,0.0844,"every B is preceded by A, with no other B in between"
+R02413,Alternate Precedence,A_Submitted,W_Handle leads,1.0,0.1109,"every B is preceded by A, with no other B in between"
+R02421,Alternate Precedence,A_Validating,A_Incomplete,0.9998,0.4761,"every B is preceded by A, with no other B in between"
+R02422,Alternate Precedence,A_Validating,A_Pending,1.0,0.5468,"every B is preceded by A, with no other B in between"
+R02429,Alternate Precedence,A_Validating,O_Returned,0.9806,0.6909,"every B is preceded by A, with no other B in between"
+R02445,Alternate Precedence,O_Accepted,A_Pending,1.0,0.5468,"every B is preceded by A, with no other B in between"
+R02491,Alternate Precedence,O_Create Offer,A_Pending,1.0,0.5468,"every B is preceded by A, with no other B in between"
+R02494,Alternate Precedence,O_Create Offer,O_Accepted,1.0,0.5468,"every B is preceded by A, with no other B in between"
+R02508,Alternate Precedence,O_Created,A_Cancelled,1.0,0.331,"every B is preceded by A, with no other B in between"
+R02521,Alternate Precedence,O_Created,O_Returned,0.9917,0.6909,"every B is preceded by A, with no other B in between"
+R02523,Alternate Precedence,O_Created,O_Sent (online only),0.9689,0.0571,"every B is preceded by A, with no other B in between"
+R02526,Alternate Precedence,O_Created,W_Call incomplete files,0.9556,0.0844,"every B is preceded by A, with no other B in between"
+R02527,Alternate Precedence,O_Created,W_Complete application,0.9996,0.6062,"every B is preceded by A, with no other B in between"
+R02578,Alternate Precedence,O_Sent (mail and online),A_Complete,0.9857,0.9953,"every B is preceded by A, with no other B in between"
+R02581,Alternate Precedence,O_Sent (mail and online),A_Denied,0.9837,0.1191,"every B is preceded by A, with no other B in between"
+R02586,Alternate Precedence,O_Sent (mail and online),O_Accepted,0.989,0.5468,"every B is preceded by A, with no other B in between"
+R02596,Alternate Precedence,O_Sent (mail and online),W_Complete application,0.9787,0.6062,"every B is preceded by A, with no other B in between"
+R02829,Chain Precedence,A_Concept,A_Accepted,0.9997,1.0,every B is immediately preceded by A
+R02965,Chain Precedence,A_Submitted,W_Handle leads,0.9951,0.1109,every B is immediately preceded by A
+R02997,Chain Precedence,O_Accepted,A_Pending,1.0,0.5468,every B is immediately preceded by A
+R03075,Chain Precedence,O_Created,O_Sent (online only),0.9578,0.0571,every B is immediately preceded by A
+R03323,Responded Existence,A_Accepted,O_Create Offer,1.0,1.0,"if A occurs, B occurs in the same case (any order)"
+R03335,Responded Existence,A_Cancelled,A_Accepted,1.0,0.331,"if A occurs, B occurs in the same case (any order)"
+R03338,Responded Existence,A_Cancelled,A_Create Application,1.0,0.331,"if A occurs, B occurs in the same case (any order)"
+R03346,Responded Existence,A_Cancelled,O_Create Offer,1.0,0.331,"if A occurs, B occurs in the same case (any order)"
+R03347,Responded Existence,A_Cancelled,O_Created,1.0,0.331,"if A occurs, B occurs in the same case (any order)"
+R03416,Responded Existence,A_Create Application,O_Created,1.0,1.0,"if A occurs, B occurs in the same case (any order)"
+R03419,Responded Existence,A_Create Application,O_Sent (mail and online),0.9854,1.0,"if A occurs, B occurs in the same case (any order)"
+R03439,Responded Existence,A_Denied,O_Created,1.0,0.1191,"if A occurs, B occurs in the same case (any order)"
+R03440,Responded Existence,A_Denied,O_Refused,0.9915,0.1191,"if A occurs, B occurs in the same case (any order)"
+R03450,Responded Existence,A_Incomplete,A_Accepted,1.0,0.4761,"if A occurs, B occurs in the same case (any order)"
+R03452,Responded Existence,A_Incomplete,A_Complete,1.0,0.4761,"if A occurs, B occurs in the same case (any order)"
+R03458,Responded Existence,A_Incomplete,A_Validating,1.0,0.4761,"if A occurs, B occurs in the same case (any order)"
+R03461,Responded Existence,A_Incomplete,O_Create Offer,1.0,0.4761,"if A occurs, B occurs in the same case (any order)"
+R03465,Responded Existence,A_Incomplete,O_Sent (mail and online),0.9885,0.4761,"if A occurs, B occurs in the same case (any order)"
+R03473,Responded Existence,A_Pending,A_Accepted,1.0,0.5468,"if A occurs, B occurs in the same case (any order)"
+R03481,Responded Existence,A_Pending,A_Validating,1.0,0.5468,"if A occurs, B occurs in the same case (any order)"
+R03485,Responded Existence,A_Pending,O_Created,1.0,0.5468,"if A occurs, B occurs in the same case (any order)"
+R03487,Responded Existence,A_Pending,O_Returned,1.0,0.5468,"if A occurs, B occurs in the same case (any order)"
+R03511,Responded Existence,A_Submitted,O_Sent (mail and online),0.9925,0.6482,"if A occurs, B occurs in the same case (any order)"
+R03636,Responded Existence,O_Refused,A_Complete,0.993,0.1181,"if A occurs, B occurs in the same case (any order)"
+R03637,Responded Existence,O_Refused,A_Concept,1.0,0.1181,"if A occurs, B occurs in the same case (any order)"
+R03647,Responded Existence,O_Refused,O_Created,1.0,0.1181,"if A occurs, B occurs in the same case (any order)"
+R03649,Responded Existence,O_Refused,O_Sent (mail and online),0.9871,0.1181,"if A occurs, B occurs in the same case (any order)"
+R03657,Responded Existence,O_Returned,A_Accepted,1.0,0.6909,"if A occurs, B occurs in the same case (any order)"
+R03739,Responded Existence,W_Assess potential fraud,O_Created,1.0,0.0085,"if A occurs, B occurs in the same case (any order)"
+R03749,Responded Existence,W_Call after offers,A_Accepted,1.0,0.0108,"if A occurs, B occurs in the same case (any order)"
+R03776,Responded Existence,W_Call incomplete files,A_Create Application,1.0,0.0844,"if A occurs, B occurs in the same case (any order)"
+R03778,Responded Existence,W_Call incomplete files,A_Incomplete,1.0,0.0844,"if A occurs, B occurs in the same case (any order)"
+R03784,Responded Existence,W_Call incomplete files,O_Create Offer,1.0,0.0844,"if A occurs, B occurs in the same case (any order)"
+R03788,Responded Existence,W_Call incomplete files,O_Sent (mail and online),0.9861,0.0844,"if A occurs, B occurs in the same case (any order)"
+R03795,Responded Existence,W_Complete application,A_Accepted,1.0,0.6062,"if A occurs, B occurs in the same case (any order)"
+R03797,Responded Existence,W_Complete application,A_Complete,0.9967,0.6062,"if A occurs, B occurs in the same case (any order)"
+R03798,Responded Existence,W_Complete application,A_Concept,1.0,0.6062,"if A occurs, B occurs in the same case (any order)"
+R03808,Responded Existence,W_Complete application,O_Created,1.0,0.6062,"if A occurs, B occurs in the same case (any order)"
+R03831,Responded Existence,W_Handle leads,O_Created,1.0,0.1109,"if A occurs, B occurs in the same case (any order)"
+R03834,Responded Existence,W_Handle leads,O_Sent (mail and online),0.99,0.1109,"if A occurs, B occurs in the same case (any order)"
+R03844,Responded Existence,W_Validate application,A_Concept,1.0,0.3463,"if A occurs, B occurs in the same case (any order)"
+R03845,Responded Existence,W_Validate application,A_Create Application,1.0,0.3463,"if A occurs, B occurs in the same case (any order)"
+R03856,Responded Existence,W_Validate application,O_Returned,0.9922,0.3463,"if A occurs, B occurs in the same case (any order)"
+R03882,Not Co-Existence,A_Accepted,W_Call after offers,0.9892,1.0,"if A occurs, B does not occur in the same case"
+R03904,Not Co-Existence,A_Cancelled,W_Assess potential fraud,0.9971,0.331,"if A occurs, B does not occur in the same case"
+R03996,Not Co-Existence,A_Denied,W_Assess potential fraud,0.9622,0.1191,"if A occurs, B does not occur in the same case"
+R03997,Not Co-Existence,A_Denied,W_Call after offers,0.9907,0.1191,"if A occurs, B does not occur in the same case"
+R04019,Not Co-Existence,A_Incomplete,W_Assess potential fraud,0.9902,0.4761,"if A occurs, B does not occur in the same case"
+R04030,Not Co-Existence,A_Pending,A_Denied,1.0,0.5468,"if A occurs, B does not occur in the same case"
+R04065,Not Co-Existence,A_Submitted,W_Assess potential fraud,0.9899,0.6482,"if A occurs, B does not occur in the same case"
+R04111,Not Co-Existence,O_Accepted,W_Assess potential fraud,0.9944,0.5468,"if A occurs, B does not occur in the same case"
+R04204,Not Co-Existence,O_Refused,W_Call after offers,0.9919,0.1181,"if A occurs, B does not occur in the same case"
+R04226,Not Co-Existence,O_Returned,W_Assess potential fraud,0.989,0.6909,"if A occurs, B does not occur in the same case"
+R04227,Not Co-Existence,O_Returned,W_Call after offers,0.9913,0.6909,"if A occurs, B does not occur in the same case"
+R04319,Not Co-Existence,W_Call after offers,W_Assess potential fraud,0.9912,0.0108,"if A occurs, B does not occur in the same case"
+R04389,Not Co-Existence,W_Handle leads,W_Call after offers,0.9931,0.1109,"if A occurs, B does not occur in the same case"
+R04419,Not Succession,A_Accepted,A_Create Application,1.0,1.0,B never occurs after A
+R04437,Not Succession,A_Accepted,W_Handle leads,1.0,1.0,B never occurs after A
+R04444,Not Succession,A_Cancelled,A_Incomplete,1.0,0.331,B never occurs after A
+R04446,Not Succession,A_Cancelled,A_Submitted,1.0,0.331,B never occurs after A
+R04456,Not Succession,A_Cancelled,W_Assess potential fraud,1.0,0.331,B never occurs after A
+R04459,Not Succession,A_Cancelled,W_Complete application,0.9956,0.331,B never occurs after A
+R04461,Not Succession,A_Cancelled,W_Validate application,0.9979,0.331,B never occurs after A
+R04482,Not Succession,A_Complete,W_Complete application,1.0,0.9953,B never occurs after A
+R04525,Not Succession,A_Create Application,W_Assess potential fraud,0.9915,1.0,B never occurs after A
+R04542,Not Succession,A_Denied,O_Create Offer,1.0,0.1191,B never occurs after A
+R04546,Not Succession,A_Denied,O_Sent (mail and online),1.0,0.1191,B never occurs after A
+R04550,Not Succession,A_Denied,W_Call incomplete files,0.9811,0.1191,B never occurs after A
+R04557,Not Succession,A_Incomplete,A_Concept,1.0,0.4761,B never occurs after A
+R04574,Not Succession,A_Incomplete,W_Complete application,1.0,0.4761,B never occurs after A
+R04579,Not Succession,A_Pending,A_Complete,1.0,0.5468,B never occurs after A
+R04580,Not Succession,A_Pending,A_Concept,1.0,0.5468,B never occurs after A
+R04584,Not Succession,A_Pending,A_Submitted,1.0,0.5468,B never occurs after A
+R04588,Not Succession,A_Pending,O_Create Offer,1.0,0.5468,B never occurs after A
+R04590,Not Succession,A_Pending,O_Refused,1.0,0.5468,B never occurs after A
+R04592,Not Succession,A_Pending,O_Sent (mail and online),1.0,0.5468,B never occurs after A
+R04593,Not Succession,A_Pending,O_Sent (online only),1.0,0.5468,B never occurs after A
+R04596,Not Succession,A_Pending,W_Call incomplete files,0.9966,0.5468,B never occurs after A
+R04597,Not Succession,A_Pending,W_Complete application,1.0,0.5468,B never occurs after A
+R04598,Not Succession,A_Pending,W_Handle leads,1.0,0.5468,B never occurs after A
+R04623,Not Succession,A_Validating,A_Accepted,1.0,0.6941,B never occurs after A
+R04624,Not Succession,A_Validating,A_Cancelled,0.9536,0.6941,B never occurs after A
+R04639,Not Succession,A_Validating,O_Sent (online only),0.9534,0.6941,B never occurs after A
+R04643,Not Succession,A_Validating,W_Complete application,1.0,0.6941,B never occurs after A
+R04657,Not Succession,O_Accepted,O_Create Offer,1.0,0.5468,B never occurs after A
+R04658,Not Succession,O_Accepted,O_Created,1.0,0.5468,B never occurs after A
+R04663,Not Succession,O_Accepted,W_Assess potential fraud,1.0,0.5468,B never occurs after A
+R04664,Not Succession,O_Accepted,W_Call after offers,1.0,0.5468,B never occurs after A
+R04670,Not Succession,O_Cancelled,A_Cancelled,0.9633,0.4977,B never occurs after A
+R04671,Not Succession,O_Cancelled,A_Complete,0.9676,0.4977,B never occurs after A
+R04690,Not Succession,O_Cancelled,W_Handle leads,1.0,0.4977,B never occurs after A
+R04719,Not Succession,O_Created,A_Create Application,1.0,1.0,B never occurs after A
+R04739,Not Succession,O_Refused,A_Cancelled,1.0,0.1181,B never occurs after A
+R04750,Not Succession,O_Refused,O_Create Offer,1.0,0.1181,B never occurs after A
+R04752,Not Succession,O_Refused,O_Returned,1.0,0.1181,B never occurs after A
+R04755,Not Succession,O_Refused,W_Assess potential fraud,0.975,0.1181,B never occurs after A
+R04757,Not Succession,O_Refused,W_Call incomplete files,0.9817,0.1181,B never occurs after A
+R04777,Not Succession,O_Returned,O_Sent (online only),0.954,0.6909,B never occurs after A
+R04800,Not Succession,O_Sent (mail and online),O_Sent (online only),0.9561,0.9854,B never occurs after A
+R04807,Not Succession,O_Sent (online only),A_Accepted,1.0,0.0571,B never occurs after A
+R04828,Not Succession,O_Sent (online only),W_Handle leads,1.0,0.0571,B never occurs after A
+R04870,Not Succession,W_Call after offers,O_Sent (online only),0.9648,0.0108,B never occurs after A
+R04877,Not Succession,W_Call incomplete files,A_Cancelled,0.9816,0.0844,B never occurs after A
+R04878,Not Succession,W_Call incomplete files,A_Complete,1.0,0.0844,B never occurs after A
+R04879,Not Succession,W_Call incomplete files,A_Concept,1.0,0.0844,B never occurs after A
+R04884,Not Succession,W_Call incomplete files,A_Submitted,1.0,0.0844,B never occurs after A
+R04907,Not Succession,W_Complete application,A_Submitted,1.0,0.6062,B never occurs after A
+R04916,Not Succession,W_Complete application,O_Sent (online only),0.957,0.6062,B never occurs after A
+R04948,Not Succession,W_Validate application,A_Concept,1.0,0.3463,B never occurs after A
+R04966,Not Succession,W_Validate application,W_Complete application,1.0,0.3463,B never occurs after A

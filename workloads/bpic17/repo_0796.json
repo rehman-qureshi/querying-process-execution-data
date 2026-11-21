@@ -1,0 +1,7994 @@
+{
+ "activities": [
+  "A_Accepted",
+  "A_Cancelled",
+  "A_Complete",
+  "A_Concept",
+  "A_Create Application",
+  "A_Denied",
+  "A_Incomplete",
+  "A_Pending",
+  "A_Submitted",
+  "A_Validating",
+  "O_Accepted",
+  "O_Cancelled",
+  "O_Create Offer",
+  "O_Created",
+  "O_Refused",
+  "O_Returned",
+  "O_Sent (mail and online)",
+  "O_Sent (online only)",
+  "W_Assess potential fraud",
+  "W_Call after offers",
+  "W_Call incomplete files",
+  "W_Complete application",
+  "W_Handle leads",
+  "W_Validate application"
+ ],
+ "min_support": 0.95,
+ "min_activated": 50,
+ "level": 796,
+ "draw": 1,
+ "rules": [
+  {
+   "id": "R00001",
+   "template": "response",
+   "activities": [
+    "A_Accepted",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00011",
+   "template": "response",
+   "activities": [
+    "A_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00012",
+   "template": "response",
+   "activities": [
+    "A_Accepted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00015",
+   "template": "response",
+   "activities": [
+    "A_Accepted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00033",
+   "template": "response",
+   "activities": [
+    "A_Cancelled",
+    "O_Cancelled"
+   ],
+   "support": 0.9846,
+   "coverage": 0.331
+  },
+  {
+   "id": "R00069",
+   "template": "response",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00071",
+   "template": "response",
+   "activities": [
+    "A_Concept",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00080",
+   "template": "response",
+   "activities": [
+    "A_Concept",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00081",
+   "template": "response",
+   "activities": [
+    "A_Concept",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00084",
+   "template": "response",
+   "activities": [
+    "A_Concept",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00092",
+   "template": "response",
+   "activities": [
+    "A_Create Application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00094",
+   "template": "response",
+   "activities": [
+    "A_Create Application",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00095",
+   "template": "response",
+   "activities": [
+    "A_Create Application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00103",
+   "template": "response",
+   "activities": [
+    "A_Create Application",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00104",
+   "template": "response",
+   "activities": [
+    "A_Create Application",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00107",
+   "template": "response",
+   "activities": [
+    "A_Create Application",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00128",
+   "template": "response",
+   "activities": [
+    "A_Denied",
+    "O_Refused"
+   ],
+   "support": 0.9912,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R00184",
+   "template": "response",
+   "activities": [
+    "A_Submitted",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00186",
+   "template": "response",
+   "activities": [
+    "A_Submitted",
+    "A_Complete"
+   ],
+   "support": 0.995,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00187",
+   "template": "response",
+   "activities": [
+    "A_Submitted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00195",
+   "template": "response",
+   "activities": [
+    "A_Submitted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00196",
+   "template": "response",
+   "activities": [
+    "A_Submitted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00199",
+   "template": "response",
+   "activities": [
+    "A_Submitted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9925,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00237",
+   "template": "response",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R00288",
+   "template": "response",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00485",
+   "template": "response",
+   "activities": [
+    "W_Complete application",
+    "A_Complete"
+   ],
+   "support": 0.9967,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R00506",
+   "template": "response",
+   "activities": [
+    "W_Handle leads",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R00508",
+   "template": "response",
+   "activities": [
+    "W_Handle leads",
+    "A_Complete"
+   ],
+   "support": 0.9934,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R00509",
+   "template": "response",
+   "activities": [
+    "W_Handle leads",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R00518",
+   "template": "response",
+   "activities": [
+    "W_Handle leads",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R00519",
+   "template": "response",
+   "activities": [
+    "W_Handle leads",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R00522",
+   "template": "response",
+   "activities": [
+    "W_Handle leads",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.99,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R00553",
+   "template": "alt_response",
+   "activities": [
+    "A_Accepted",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00563",
+   "template": "alt_response",
+   "activities": [
+    "A_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00564",
+   "template": "alt_response",
+   "activities": [
+    "A_Accepted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00567",
+   "template": "alt_response",
+   "activities": [
+    "A_Accepted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00585",
+   "template": "alt_response",
+   "activities": [
+    "A_Cancelled",
+    "O_Cancelled"
+   ],
+   "support": 0.9846,
+   "coverage": 0.331
+  },
+  {
+   "id": "R00621",
+   "template": "alt_response",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00623",
+   "template": "alt_response",
+   "activities": [
+    "A_Concept",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00632",
+   "template": "alt_response",
+   "activities": [
+    "A_Concept",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00633",
+   "template": "alt_response",
+   "activities": [
+    "A_Concept",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00636",
+   "template": "alt_response",
+   "activities": [
+    "A_Concept",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00644",
+   "template": "alt_response",
+   "activities": [
+    "A_Create Application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00646",
+   "template": "alt_response",
+   "activities": [
+    "A_Create Application",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00647",
+   "template": "alt_response",
+   "activities": [
+    "A_Create Application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00655",
+   "template": "alt_response",
+   "activities": [
+    "A_Create Application",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00656",
+   "template": "alt_response",
+   "activities": [
+    "A_Create Application",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00659",
+   "template": "alt_response",
+   "activities": [
+    "A_Create Application",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R00680",
+   "template": "alt_response",
+   "activities": [
+    "A_Denied",
+    "O_Refused"
+   ],
+   "support": 0.9912,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R00736",
+   "template": "alt_response",
+   "activities": [
+    "A_Submitted",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00738",
+   "template": "alt_response",
+   "activities": [
+    "A_Submitted",
+    "A_Complete"
+   ],
+   "support": 0.995,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00739",
+   "template": "alt_response",
+   "activities": [
+    "A_Submitted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00747",
+   "template": "alt_response",
+   "activities": [
+    "A_Submitted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00748",
+   "template": "alt_response",
+   "activities": [
+    "A_Submitted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00751",
+   "template": "alt_response",
+   "activities": [
+    "A_Submitted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9925,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R00789",
+   "template": "alt_response",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R00840",
+   "template": "alt_response",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01037",
+   "template": "alt_response",
+   "activities": [
+    "W_Complete application",
+    "A_Complete"
+   ],
+   "support": 0.9966,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01058",
+   "template": "alt_response",
+   "activities": [
+    "W_Handle leads",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01060",
+   "template": "alt_response",
+   "activities": [
+    "W_Handle leads",
+    "A_Complete"
+   ],
+   "support": 0.9934,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01061",
+   "template": "alt_response",
+   "activities": [
+    "W_Handle leads",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01070",
+   "template": "alt_response",
+   "activities": [
+    "W_Handle leads",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01071",
+   "template": "alt_response",
+   "activities": [
+    "W_Handle leads",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01074",
+   "template": "alt_response",
+   "activities": [
+    "W_Handle leads",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.99,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01115",
+   "template": "chain_response",
+   "activities": [
+    "A_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 0.9998,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01137",
+   "template": "chain_response",
+   "activities": [
+    "A_Cancelled",
+    "O_Cancelled"
+   ],
+   "support": 0.9846,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01173",
+   "template": "chain_response",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 0.9997,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01232",
+   "template": "chain_response",
+   "activities": [
+    "A_Denied",
+    "O_Refused"
+   ],
+   "support": 0.9912,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01341",
+   "template": "chain_response",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01392",
+   "template": "chain_response",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01589",
+   "template": "chain_response",
+   "activities": [
+    "W_Complete application",
+    "A_Complete"
+   ],
+   "support": 0.9963,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01613",
+   "template": "chain_response",
+   "activities": [
+    "W_Handle leads",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01656",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01657",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R01660",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01661",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01662",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01664",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R01665",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01666",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R01667",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01668",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01669",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01670",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01671",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R01672",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R01674",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R01675",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01676",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Complete application"
+   ],
+   "support": 0.9997,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01678",
+   "template": "precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R01703",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "A_Cancelled"
+   ],
+   "support": 0.9895,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01706",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "A_Denied"
+   ],
+   "support": 0.9901,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01707",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01708",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01710",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R01711",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01712",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "O_Cancelled"
+   ],
+   "support": 0.9598,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R01715",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "O_Refused"
+   ],
+   "support": 0.993,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01716",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01720",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R01721",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01724",
+   "template": "precedence",
+   "activities": [
+    "A_Complete",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R01725",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01726",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01727",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R01729",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01730",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01731",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01733",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R01734",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01735",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R01736",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01737",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01738",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01739",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01740",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R01741",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R01743",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R01744",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01745",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01747",
+   "template": "precedence",
+   "activities": [
+    "A_Concept",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R01748",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01749",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01750",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R01751",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01752",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01753",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01754",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01755",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R01756",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R01757",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01758",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R01759",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01760",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01761",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01762",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01763",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R01764",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R01765",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Assess potential fraud"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R01766",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R01767",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01768",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01769",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01770",
+   "template": "precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R01784",
+   "template": "precedence",
+   "activities": [
+    "A_Denied",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01813",
+   "template": "precedence",
+   "activities": [
+    "A_Incomplete",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01861",
+   "template": "precedence",
+   "activities": [
+    "A_Submitted",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R01868",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "A_Denied"
+   ],
+   "support": 0.955,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01869",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01870",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01872",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01876",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "O_Refused"
+   ],
+   "support": 0.9599,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01877",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01882",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01885",
+   "template": "precedence",
+   "activities": [
+    "A_Validating",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R01893",
+   "template": "precedence",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01933",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01934",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R01937",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01938",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01939",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01941",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R01942",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01943",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R01944",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R01945",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01946",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01947",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R01948",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R01950",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R01951",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01952",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Complete application"
+   ],
+   "support": 0.9996,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01954",
+   "template": "precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R01956",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R01957",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R01960",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R01961",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R01962",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01964",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R01965",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R01966",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R01968",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R01969",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R01970",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R01971",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R01973",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R01974",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R01975",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "W_Complete application"
+   ],
+   "support": 0.9996,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R01977",
+   "template": "precedence",
+   "activities": [
+    "O_Created",
+    "W_Validate application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R02008",
+   "template": "precedence",
+   "activities": [
+    "O_Returned",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02011",
+   "template": "precedence",
+   "activities": [
+    "O_Returned",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02020",
+   "template": "precedence",
+   "activities": [
+    "O_Returned",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9692,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02025",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Cancelled"
+   ],
+   "support": 0.98,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02026",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Complete"
+   ],
+   "support": 0.9857,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02029",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Denied"
+   ],
+   "support": 0.984,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02030",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Incomplete"
+   ],
+   "support": 0.9871,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R02031",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Pending"
+   ],
+   "support": 0.989,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02033",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Validating"
+   ],
+   "support": 0.9885,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R02034",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Accepted"
+   ],
+   "support": 0.989,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02035",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Cancelled"
+   ],
+   "support": 0.9506,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R02038",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Refused"
+   ],
+   "support": 0.9871,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R02039",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Returned"
+   ],
+   "support": 0.9895,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R02043",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Call incomplete files"
+   ],
+   "support": 0.985,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02044",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Complete application"
+   ],
+   "support": 0.9787,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02046",
+   "template": "precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Validate application"
+   ],
+   "support": 0.9831,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R02208",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02209",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02212",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Denied"
+   ],
+   "support": 0.9997,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02214",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02217",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02226",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Call after offers"
+   ],
+   "support": 0.9971,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R02227",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9515,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02228",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Accepted",
+    "W_Complete application"
+   ],
+   "support": 0.9997,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02255",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Complete",
+    "A_Cancelled"
+   ],
+   "support": 0.9895,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02258",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Complete",
+    "A_Denied"
+   ],
+   "support": 0.9899,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02260",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Complete",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02263",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Complete",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02272",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Complete",
+    "W_Call after offers"
+   ],
+   "support": 0.9971,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R02273",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Complete",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9515,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02277",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R02278",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02279",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02281",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "A_Denied"
+   ],
+   "support": 0.9997,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02283",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02286",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02295",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "W_Call after offers"
+   ],
+   "support": 0.9971,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R02296",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9515,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02297",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Concept",
+    "W_Complete application"
+   ],
+   "support": 0.9999,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02300",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R02301",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02302",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02303",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R02304",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Denied"
+   ],
+   "support": 0.9997,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02306",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02307",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R02309",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02317",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9515,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R02318",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Call after offers"
+   ],
+   "support": 0.9971,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R02319",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9515,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02320",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Complete application"
+   ],
+   "support": 0.9999,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02321",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Create Application",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R02365",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Incomplete",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02413",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Submitted",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R02420",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "A_Denied"
+   ],
+   "support": 0.9547,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02421",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "A_Incomplete"
+   ],
+   "support": 0.9998,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R02422",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02424",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02429",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "O_Returned"
+   ],
+   "support": 0.9806,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R02434",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "W_Call incomplete files"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02437",
+   "template": "alt_precedence",
+   "activities": [
+    "A_Validating",
+    "W_Validate application"
+   ],
+   "support": 0.9962,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R02445",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02485",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02486",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02489",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Denied"
+   ],
+   "support": 0.9997,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02491",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02494",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02496",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R02498",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Returned"
+   ],
+   "support": 0.9917,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R02500",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9689,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R02502",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Call after offers"
+   ],
+   "support": 0.9971,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R02503",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9556,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02504",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Create Offer",
+    "W_Complete application"
+   ],
+   "support": 0.9996,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02508",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02509",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02512",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "A_Denied"
+   ],
+   "support": 0.9997,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02514",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02517",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02521",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "O_Returned"
+   ],
+   "support": 0.9917,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R02523",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9689,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R02525",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "W_Call after offers"
+   ],
+   "support": 0.9971,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R02526",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9556,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R02527",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Created",
+    "W_Complete application"
+   ],
+   "support": 0.9996,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02560",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Returned",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02563",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Returned",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02577",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Cancelled"
+   ],
+   "support": 0.98,
+   "coverage": 0.331
+  },
+  {
+   "id": "R02578",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Complete"
+   ],
+   "support": 0.9857,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R02581",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Denied"
+   ],
+   "support": 0.9837,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R02583",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Pending"
+   ],
+   "support": 0.989,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02586",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Accepted"
+   ],
+   "support": 0.989,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R02596",
+   "template": "alt_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Complete application"
+   ],
+   "support": 0.9787,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R02829",
+   "template": "chain_precedence",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 0.9997,
+   "coverage": 1.0
+  },
+  {
+   "id": "R02859",
+   "template": "chain_precedence",
+   "activities": [
+    "A_Create Application",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R02965",
+   "template": "chain_precedence",
+   "activities": [
+    "A_Submitted",
+    "W_Handle leads"
+   ],
+   "support": 0.9951,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R02997",
+   "template": "chain_precedence",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03048",
+   "template": "chain_precedence",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03075",
+   "template": "chain_precedence",
+   "activities": [
+    "O_Created",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9578,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03148",
+   "template": "chain_precedence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Complete application"
+   ],
+   "support": 0.9787,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03313",
+   "template": "responded_existence",
+   "activities": [
+    "A_Accepted",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03314",
+   "template": "responded_existence",
+   "activities": [
+    "A_Accepted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03315",
+   "template": "responded_existence",
+   "activities": [
+    "A_Accepted",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03323",
+   "template": "responded_existence",
+   "activities": [
+    "A_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03324",
+   "template": "responded_existence",
+   "activities": [
+    "A_Accepted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03327",
+   "template": "responded_existence",
+   "activities": [
+    "A_Accepted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03335",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03336",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "A_Complete"
+   ],
+   "support": 0.9895,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03337",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03338",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03345",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03346",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03347",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03350",
+   "template": "responded_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.98,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03358",
+   "template": "responded_existence",
+   "activities": [
+    "A_Complete",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03360",
+   "template": "responded_existence",
+   "activities": [
+    "A_Complete",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03361",
+   "template": "responded_existence",
+   "activities": [
+    "A_Complete",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03369",
+   "template": "responded_existence",
+   "activities": [
+    "A_Complete",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03370",
+   "template": "responded_existence",
+   "activities": [
+    "A_Complete",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03373",
+   "template": "responded_existence",
+   "activities": [
+    "A_Complete",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9901,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03381",
+   "template": "responded_existence",
+   "activities": [
+    "A_Concept",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03383",
+   "template": "responded_existence",
+   "activities": [
+    "A_Concept",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03384",
+   "template": "responded_existence",
+   "activities": [
+    "A_Concept",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03392",
+   "template": "responded_existence",
+   "activities": [
+    "A_Concept",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03393",
+   "template": "responded_existence",
+   "activities": [
+    "A_Concept",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03396",
+   "template": "responded_existence",
+   "activities": [
+    "A_Concept",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03404",
+   "template": "responded_existence",
+   "activities": [
+    "A_Create Application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03406",
+   "template": "responded_existence",
+   "activities": [
+    "A_Create Application",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03407",
+   "template": "responded_existence",
+   "activities": [
+    "A_Create Application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03415",
+   "template": "responded_existence",
+   "activities": [
+    "A_Create Application",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03416",
+   "template": "responded_existence",
+   "activities": [
+    "A_Create Application",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03419",
+   "template": "responded_existence",
+   "activities": [
+    "A_Create Application",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03427",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03429",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "A_Complete"
+   ],
+   "support": 0.9901,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03430",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03431",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03435",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "A_Validating"
+   ],
+   "support": 0.955,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03438",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03439",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03440",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "O_Refused"
+   ],
+   "support": 0.9915,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03442",
+   "template": "responded_existence",
+   "activities": [
+    "A_Denied",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.984,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03450",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03452",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03453",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03454",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03458",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03461",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03462",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03464",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "O_Returned"
+   ],
+   "support": 0.995,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03465",
+   "template": "responded_existence",
+   "activities": [
+    "A_Incomplete",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9885,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R03473",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03475",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03476",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03477",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03481",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03482",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03484",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03485",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03487",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03488",
+   "template": "responded_existence",
+   "activities": [
+    "A_Pending",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.989,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03496",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03498",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "A_Complete"
+   ],
+   "support": 0.995,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03499",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03500",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03507",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03508",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03511",
+   "template": "responded_existence",
+   "activities": [
+    "A_Submitted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9925,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R03519",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03521",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03522",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03523",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03530",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03531",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03533",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "O_Returned"
+   ],
+   "support": 0.9953,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03534",
+   "template": "responded_existence",
+   "activities": [
+    "A_Validating",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9895,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R03542",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03544",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03545",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03546",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03549",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03551",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03553",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03554",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03556",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03557",
+   "template": "responded_existence",
+   "activities": [
+    "O_Accepted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.989,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R03565",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03567",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "A_Complete"
+   ],
+   "support": 0.9922,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03568",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03569",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03576",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03577",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03580",
+   "template": "responded_existence",
+   "activities": [
+    "O_Cancelled",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.985,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R03588",
+   "template": "responded_existence",
+   "activities": [
+    "O_Create Offer",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03590",
+   "template": "responded_existence",
+   "activities": [
+    "O_Create Offer",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03591",
+   "template": "responded_existence",
+   "activities": [
+    "O_Create Offer",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03592",
+   "template": "responded_existence",
+   "activities": [
+    "O_Create Offer",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03600",
+   "template": "responded_existence",
+   "activities": [
+    "O_Create Offer",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03603",
+   "template": "responded_existence",
+   "activities": [
+    "O_Create Offer",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03611",
+   "template": "responded_existence",
+   "activities": [
+    "O_Created",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03613",
+   "template": "responded_existence",
+   "activities": [
+    "O_Created",
+    "A_Complete"
+   ],
+   "support": 0.9953,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03614",
+   "template": "responded_existence",
+   "activities": [
+    "O_Created",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03615",
+   "template": "responded_existence",
+   "activities": [
+    "O_Created",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03623",
+   "template": "responded_existence",
+   "activities": [
+    "O_Created",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03626",
+   "template": "responded_existence",
+   "activities": [
+    "O_Created",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9854,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03634",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03636",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "A_Complete"
+   ],
+   "support": 0.993,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03637",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03638",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03639",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03643",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "A_Validating"
+   ],
+   "support": 0.9599,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03646",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03647",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03649",
+   "template": "responded_existence",
+   "activities": [
+    "O_Refused",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9871,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R03657",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03659",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03660",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03661",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03666",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03669",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03670",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03672",
+   "template": "responded_existence",
+   "activities": [
+    "O_Returned",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9901,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R03680",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R03682",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R03683",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R03684",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R03692",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R03693",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R03703",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03705",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03706",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03707",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03715",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03716",
+   "template": "responded_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R03726",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03728",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "A_Complete"
+   ],
+   "support": 0.9925,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03729",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03730",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03738",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03739",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03742",
+   "template": "responded_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9813,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R03749",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call after offers",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R03751",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call after offers",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R03752",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call after offers",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R03753",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call after offers",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R03761",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call after offers",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R03762",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call after offers",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R03772",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03774",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03775",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03776",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03778",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03781",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03784",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03785",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03787",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Returned"
+   ],
+   "support": 0.9857,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03788",
+   "template": "responded_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9861,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R03795",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03797",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "A_Complete"
+   ],
+   "support": 0.9967,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03798",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03799",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03807",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03808",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03811",
+   "template": "responded_existence",
+   "activities": [
+    "W_Complete application",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9842,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R03818",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03820",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "A_Complete"
+   ],
+   "support": 0.9934,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03821",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03822",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03826",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03830",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03831",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03834",
+   "template": "responded_existence",
+   "activities": [
+    "W_Handle leads",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.99,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R03841",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03843",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03844",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03845",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03850",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03853",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03854",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03856",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "O_Returned"
+   ],
+   "support": 0.9922,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03857",
+   "template": "responded_existence",
+   "activities": [
+    "W_Validate application",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9849,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R03881",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Accepted",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03882",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Accepted",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03891",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03893",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03896",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03900",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03903",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9699,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03904",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9971,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03905",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Cancelled",
+    "W_Call after offers"
+   ],
+   "support": 0.9869,
+   "coverage": 0.331
+  },
+  {
+   "id": "R03927",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Complete",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03928",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Complete",
+    "W_Call after offers"
+   ],
+   "support": 0.9891,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R03950",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Concept",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03951",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Concept",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03973",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Create Application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03974",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Create Application",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R03980",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Denied",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03985",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Denied",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03988",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Denied",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03995",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Denied",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9664,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03996",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Denied",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9622,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R03997",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Denied",
+    "W_Call after offers"
+   ],
+   "support": 0.9907,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04019",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Incomplete",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9902,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04020",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Incomplete",
+    "W_Call after offers"
+   ],
+   "support": 0.9881,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04026",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Pending",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04030",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Pending",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04038",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Pending",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04042",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Pending",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9944,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04043",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Pending",
+    "W_Call after offers"
+   ],
+   "support": 0.9902,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04064",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Submitted",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9521,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04065",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Submitted",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9899,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04066",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Submitted",
+    "W_Call after offers"
+   ],
+   "support": 0.9948,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04072",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Validating",
+    "A_Cancelled"
+   ],
+   "support": 0.9536,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04088",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Validating",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.989,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04089",
+   "template": "not_co_existence",
+   "activities": [
+    "A_Validating",
+    "W_Call after offers"
+   ],
+   "support": 0.9905,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04095",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04099",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Accepted",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04107",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Accepted",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04111",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Accepted",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9944,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04112",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Accepted",
+    "W_Call after offers"
+   ],
+   "support": 0.9902,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04122",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Cancelled",
+    "A_Denied"
+   ],
+   "support": 0.9876,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04130",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Cancelled",
+    "O_Refused"
+   ],
+   "support": 0.9896,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04134",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Cancelled",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9952,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04135",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Cancelled",
+    "W_Call after offers"
+   ],
+   "support": 0.989,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04157",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Create Offer",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04158",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Create Offer",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04180",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Created",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04181",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Created",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04187",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04193",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04196",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04197",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "O_Cancelled"
+   ],
+   "support": 0.9562,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04202",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9667,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04203",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9618,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04204",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Refused",
+    "W_Call after offers"
+   ],
+   "support": 0.9919,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04210",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Returned",
+    "A_Cancelled"
+   ],
+   "support": 0.9559,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04226",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Returned",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.989,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04227",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Returned",
+    "W_Call after offers"
+   ],
+   "support": 0.9913,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04248",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9521,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04249",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04250",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Call after offers"
+   ],
+   "support": 0.9927,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04272",
+   "template": "not_co_existence",
+   "activities": [
+    "O_Sent (online only)",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9894,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04296",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Assess potential fraud",
+    "W_Call after offers"
+   ],
+   "support": 0.9888,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R04319",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Call after offers",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9912,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04342",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9865,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04343",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Call incomplete files",
+    "W_Call after offers"
+   ],
+   "support": 0.9872,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04365",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Complete application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9913,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04366",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Complete application",
+    "W_Call after offers"
+   ],
+   "support": 0.9869,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04388",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Handle leads",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9854,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R04389",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Handle leads",
+    "W_Call after offers"
+   ],
+   "support": 0.9931,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R04411",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Validate application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.985,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04412",
+   "template": "not_co_existence",
+   "activities": [
+    "W_Validate application",
+    "W_Call after offers"
+   ],
+   "support": 0.9828,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04418",
+   "template": "not_succession",
+   "activities": [
+    "A_Accepted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04419",
+   "template": "not_succession",
+   "activities": [
+    "A_Accepted",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04423",
+   "template": "not_succession",
+   "activities": [
+    "A_Accepted",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04433",
+   "template": "not_succession",
+   "activities": [
+    "A_Accepted",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9923,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04434",
+   "template": "not_succession",
+   "activities": [
+    "A_Accepted",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04437",
+   "template": "not_succession",
+   "activities": [
+    "A_Accepted",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04439",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04440",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04441",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04442",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04443",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04444",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04445",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04446",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04447",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04448",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04450",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04451",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04452",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04453",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04454",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04455",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04456",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "W_Assess potential fraud"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04457",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "W_Call after offers"
+   ],
+   "support": 0.9894,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04458",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9501,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04459",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "W_Complete application"
+   ],
+   "support": 0.9956,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04460",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04461",
+   "template": "not_succession",
+   "activities": [
+    "A_Cancelled",
+    "W_Validate application"
+   ],
+   "support": 0.9979,
+   "coverage": 0.331
+  },
+  {
+   "id": "R04462",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04464",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04465",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04469",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04478",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9559,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04479",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9924,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04480",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "W_Call after offers"
+   ],
+   "support": 0.9891,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04482",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04483",
+   "template": "not_succession",
+   "activities": [
+    "A_Complete",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.9953
+  },
+  {
+   "id": "R04488",
+   "template": "not_succession",
+   "activities": [
+    "A_Concept",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04492",
+   "template": "not_succession",
+   "activities": [
+    "A_Concept",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04502",
+   "template": "not_succession",
+   "activities": [
+    "A_Concept",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9921,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04503",
+   "template": "not_succession",
+   "activities": [
+    "A_Concept",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04506",
+   "template": "not_succession",
+   "activities": [
+    "A_Concept",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04525",
+   "template": "not_succession",
+   "activities": [
+    "A_Create Application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9915,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04526",
+   "template": "not_succession",
+   "activities": [
+    "A_Create Application",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04531",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04532",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04533",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04534",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04535",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04536",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04537",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04538",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04539",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04540",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04541",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04542",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04543",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04545",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04546",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04547",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04548",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9752,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04549",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "W_Call after offers"
+   ],
+   "support": 0.9936,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04550",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9811,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04551",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "W_Complete application"
+   ],
+   "support": 0.9955,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04552",
+   "template": "not_succession",
+   "activities": [
+    "A_Denied",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.1191
+  },
+  {
+   "id": "R04554",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04556",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04557",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04558",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04561",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04571",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9947,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04572",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "W_Call after offers"
+   ],
+   "support": 0.9997,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04574",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04575",
+   "template": "not_succession",
+   "activities": [
+    "A_Incomplete",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.4761
+  },
+  {
+   "id": "R04577",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04578",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04579",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04580",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04581",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04582",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04583",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04584",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04585",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04586",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04588",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04589",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04590",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04591",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04592",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04593",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04594",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "W_Assess potential fraud"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04595",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04596",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9966,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04597",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04598",
+   "template": "not_succession",
+   "activities": [
+    "A_Pending",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04604",
+   "template": "not_succession",
+   "activities": [
+    "A_Submitted",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04616",
+   "template": "not_succession",
+   "activities": [
+    "A_Submitted",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9521,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04617",
+   "template": "not_succession",
+   "activities": [
+    "A_Submitted",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9899,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04618",
+   "template": "not_succession",
+   "activities": [
+    "A_Submitted",
+    "W_Call after offers"
+   ],
+   "support": 0.9948,
+   "coverage": 0.6482
+  },
+  {
+   "id": "R04623",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04624",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "A_Cancelled"
+   ],
+   "support": 0.9536,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04625",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04626",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04627",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04631",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04638",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9595,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04639",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9534,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04640",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9896,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04641",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "W_Call after offers"
+   ],
+   "support": 0.9998,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04643",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04644",
+   "template": "not_succession",
+   "activities": [
+    "A_Validating",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.6941
+  },
+  {
+   "id": "R04646",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04647",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04648",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04649",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04650",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04651",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Denied"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04652",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04654",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04655",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04657",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04658",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04659",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "O_Refused"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04660",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04661",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04662",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04663",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "W_Assess potential fraud"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04664",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "W_Call after offers"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04665",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9966,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04666",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04667",
+   "template": "not_succession",
+   "activities": [
+    "O_Accepted",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.5468
+  },
+  {
+   "id": "R04669",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04670",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Cancelled"
+   ],
+   "support": 0.9633,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04671",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Complete"
+   ],
+   "support": 0.9676,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04672",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04673",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04674",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Denied"
+   ],
+   "support": 0.9876,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04677",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04682",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "O_Refused"
+   ],
+   "support": 0.9896,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04685",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9913,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04686",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9992,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04687",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "W_Call after offers"
+   ],
+   "support": 0.9922,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04688",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9589,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04689",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "W_Complete application"
+   ],
+   "support": 0.9788,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04690",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04691",
+   "template": "not_succession",
+   "activities": [
+    "O_Cancelled",
+    "W_Validate application"
+   ],
+   "support": 0.9609,
+   "coverage": 0.4977
+  },
+  {
+   "id": "R04692",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04695",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04696",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04700",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04709",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9924,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04710",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04713",
+   "template": "not_succession",
+   "activities": [
+    "O_Create Offer",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04715",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04718",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04719",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04723",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04732",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9924,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04733",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "W_Call after offers"
+   ],
+   "support": 0.9892,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04736",
+   "template": "not_succession",
+   "activities": [
+    "O_Created",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 1.0
+  },
+  {
+   "id": "R04738",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04739",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04740",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04741",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04742",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04743",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Denied"
+   ],
+   "support": 0.9997,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04744",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Incomplete"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04745",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Pending"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04746",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04747",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "A_Validating"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04748",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04749",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Cancelled"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04750",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Create Offer"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04751",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Created"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04752",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Returned"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04753",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Sent (mail and online)"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04754",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "O_Sent (online only)"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04755",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.975,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04756",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "W_Call after offers"
+   ],
+   "support": 0.9949,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04757",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "W_Call incomplete files"
+   ],
+   "support": 0.9817,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04758",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "W_Complete application"
+   ],
+   "support": 0.9965,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04759",
+   "template": "not_succession",
+   "activities": [
+    "O_Refused",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.1181
+  },
+  {
+   "id": "R04761",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04762",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "A_Cancelled"
+   ],
+   "support": 0.9559,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04763",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04764",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04765",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04769",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04776",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9611,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04777",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "O_Sent (online only)"
+   ],
+   "support": 0.954,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04778",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9897,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04779",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "W_Call after offers"
+   ],
+   "support": 0.9999,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04781",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04782",
+   "template": "not_succession",
+   "activities": [
+    "O_Returned",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.6909
+  },
+  {
+   "id": "R04784",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04787",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04788",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04792",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04800",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9561,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04801",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9924,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04802",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Call after offers"
+   ],
+   "support": 0.993,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04805",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (mail and online)",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.9854
+  },
+  {
+   "id": "R04807",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04810",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04811",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04815",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (online only)",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04824",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (online only)",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9956,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04828",
+   "template": "not_succession",
+   "activities": [
+    "O_Sent (online only)",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.0571
+  },
+  {
+   "id": "R04834",
+   "template": "not_succession",
+   "activities": [
+    "W_Assess potential fraud",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R04838",
+   "template": "not_succession",
+   "activities": [
+    "W_Assess potential fraud",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R04847",
+   "template": "not_succession",
+   "activities": [
+    "W_Assess potential fraud",
+    "O_Sent (online only)"
+   ],
+   "support": 0.959,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R04848",
+   "template": "not_succession",
+   "activities": [
+    "W_Assess potential fraud",
+    "W_Call after offers"
+   ],
+   "support": 0.9888,
+   "coverage": 0.0085
+  },
+  {
+   "id": "R04853",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04855",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04856",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04857",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04858",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "A_Denied"
+   ],
+   "support": 0.9677,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04861",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04867",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "O_Refused"
+   ],
+   "support": 0.9677,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04870",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9648,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04871",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "W_Assess potential fraud"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04873",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04874",
+   "template": "not_succession",
+   "activities": [
+    "W_Call after offers",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.0108
+  },
+  {
+   "id": "R04876",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04877",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Cancelled"
+   ],
+   "support": 0.9816,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04878",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04879",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04880",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04884",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04888",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Create Offer"
+   ],
+   "support": 0.9662,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04889",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Created"
+   ],
+   "support": 0.9662,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04892",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Sent (mail and online)"
+   ],
+   "support": 0.9857,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04893",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "O_Sent (online only)"
+   ],
+   "support": 0.9782,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04894",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9966,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04895",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "W_Call after offers"
+   ],
+   "support": 0.9989,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04896",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04897",
+   "template": "not_succession",
+   "activities": [
+    "W_Call incomplete files",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.0844
+  },
+  {
+   "id": "R04899",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "A_Accepted"
+   ],
+   "support": 0.9997,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04902",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04903",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04907",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04916",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "O_Sent (online only)"
+   ],
+   "support": 0.957,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04917",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9919,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04918",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "W_Call after offers"
+   ],
+   "support": 0.9869,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04920",
+   "template": "not_succession",
+   "activities": [
+    "W_Complete application",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.6062
+  },
+  {
+   "id": "R04926",
+   "template": "not_succession",
+   "activities": [
+    "W_Handle leads",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R04930",
+   "template": "not_succession",
+   "activities": [
+    "W_Handle leads",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R04940",
+   "template": "not_succession",
+   "activities": [
+    "W_Handle leads",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9903,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R04941",
+   "template": "not_succession",
+   "activities": [
+    "W_Handle leads",
+    "W_Call after offers"
+   ],
+   "support": 0.9931,
+   "coverage": 0.1109
+  },
+  {
+   "id": "R04945",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "A_Accepted"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04947",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "A_Complete"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04948",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "A_Concept"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04949",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "A_Create Application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04953",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "A_Submitted"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04963",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "W_Assess potential fraud"
+   ],
+   "support": 0.9869,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04964",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "W_Call after offers"
+   ],
+   "support": 0.9996,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04966",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "W_Complete application"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  },
+  {
+   "id": "R04967",
+   "template": "not_succession",
+   "activities": [
+    "W_Validate application",
+    "W_Handle leads"
+   ],
+   "support": 1.0,
+   "coverage": 0.3463
+  }
+ ]
+}

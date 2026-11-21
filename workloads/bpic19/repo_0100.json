@@ -1,0 +1,1038 @@
+{
+ "activities": [
+  "Block Purchase Order Item",
+  "Cancel Goods Receipt",
+  "Cancel Invoice Receipt",
+  "Cancel Subsequent Invoice",
+  "Change Approval for Purchase Order",
+  "Change Currency",
+  "Change Delivery Indicator",
+  "Change Final Invoice Indicator",
+  "Change Price",
+  "Change Quantity",
+  "Change Storage Location",
+  "Change payment term",
+  "Clear Invoice",
+  "Create Purchase Order Item",
+  "Create Purchase Requisition Item",
+  "Delete Purchase Order Item",
+  "Reactivate Purchase Order Item",
+  "Receive Order Confirmation",
+  "Record Goods Receipt",
+  "Record Invoice Receipt",
+  "Record Subsequent Invoice",
+  "Release Purchase Order",
+  "Release Purchase Requisition",
+  "Remove Payment Block",
+  "Set Payment Block",
+  "Update Order Confirmation",
+  "Vendor creates debit memo",
+  "Vendor creates invoice"
+ ],
+ "min_support": 0.95,
+ "min_activated": 50,
+ "level": 100,
+ "draw": 1,
+ "rules": [
+  {
+   "id": "R00391",
+   "template": "response",
+   "activities": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item"
+   ],
+   "support": 1.0,
+   "coverage": 0.1928
+  },
+  {
+   "id": "R00476",
+   "template": "response",
+   "activities": [
+    "Receive Order Confirmation",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9607,
+   "coverage": 0.1426
+  },
+  {
+   "id": "R00571",
+   "template": "response",
+   "activities": [
+    "Release Purchase Order",
+    "Change Approval for Purchase Order"
+   ],
+   "support": 1.0,
+   "coverage": 0.0018
+  },
+  {
+   "id": "R00748",
+   "template": "response",
+   "activities": [
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "support": 0.9899,
+   "coverage": 0.9084
+  },
+  {
+   "id": "R01147",
+   "template": "alt_response",
+   "activities": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item"
+   ],
+   "support": 1.0,
+   "coverage": 0.1928
+  },
+  {
+   "id": "R01232",
+   "template": "alt_response",
+   "activities": [
+    "Receive Order Confirmation",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9605,
+   "coverage": 0.1426
+  },
+  {
+   "id": "R01327",
+   "template": "alt_response",
+   "activities": [
+    "Release Purchase Order",
+    "Change Approval for Purchase Order"
+   ],
+   "support": 1.0,
+   "coverage": 0.0018
+  },
+  {
+   "id": "R01504",
+   "template": "alt_response",
+   "activities": [
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "support": 0.9769,
+   "coverage": 0.9084
+  },
+  {
+   "id": "R01903",
+   "template": "chain_response",
+   "activities": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item"
+   ],
+   "support": 0.9896,
+   "coverage": 0.1928
+  },
+  {
+   "id": "R02628",
+   "template": "precedence",
+   "activities": [
+    "Create Purchase Order Item",
+    "Change Quantity"
+   ],
+   "support": 1.0,
+   "coverage": 0.0693
+  },
+  {
+   "id": "R02637",
+   "template": "precedence",
+   "activities": [
+    "Create Purchase Order Item",
+    "Record Invoice Receipt"
+   ],
+   "support": 1.0,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R02645",
+   "template": "precedence",
+   "activities": [
+    "Create Purchase Order Item",
+    "Vendor creates invoice"
+   ],
+   "support": 0.9864,
+   "coverage": 0.9084
+  },
+  {
+   "id": "R02766",
+   "template": "precedence",
+   "activities": [
+    "Record Goods Receipt",
+    "Clear Invoice"
+   ],
+   "support": 0.9962,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R02776",
+   "template": "precedence",
+   "activities": [
+    "Record Goods Receipt",
+    "Remove Payment Block"
+   ],
+   "support": 0.9896,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R02793",
+   "template": "precedence",
+   "activities": [
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "support": 0.9977,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R02803",
+   "template": "precedence",
+   "activities": [
+    "Record Invoice Receipt",
+    "Remove Payment Block"
+   ],
+   "support": 0.9991,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R02973",
+   "template": "precedence",
+   "activities": [
+    "Vendor creates debit memo",
+    "Cancel Subsequent Invoice"
+   ],
+   "support": 0.9931,
+   "coverage": 0.002
+  },
+  {
+   "id": "R03009",
+   "template": "precedence",
+   "activities": [
+    "Vendor creates invoice",
+    "Clear Invoice"
+   ],
+   "support": 0.9978,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R03016",
+   "template": "precedence",
+   "activities": [
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "support": 0.9848,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R03020",
+   "template": "precedence",
+   "activities": [
+    "Vendor creates invoice",
+    "Remove Payment Block"
+   ],
+   "support": 0.9988,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R03401",
+   "template": "alt_precedence",
+   "activities": [
+    "Create Purchase Order Item",
+    "Vendor creates invoice"
+   ],
+   "support": 0.9651,
+   "coverage": 0.9084
+  },
+  {
+   "id": "R03522",
+   "template": "alt_precedence",
+   "activities": [
+    "Record Goods Receipt",
+    "Clear Invoice"
+   ],
+   "support": 0.9639,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R03532",
+   "template": "alt_precedence",
+   "activities": [
+    "Record Goods Receipt",
+    "Remove Payment Block"
+   ],
+   "support": 0.9739,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R03549",
+   "template": "alt_precedence",
+   "activities": [
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "support": 0.9784,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R03559",
+   "template": "alt_precedence",
+   "activities": [
+    "Record Invoice Receipt",
+    "Remove Payment Block"
+   ],
+   "support": 0.9937,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R03729",
+   "template": "alt_precedence",
+   "activities": [
+    "Vendor creates debit memo",
+    "Cancel Subsequent Invoice"
+   ],
+   "support": 0.9816,
+   "coverage": 0.002
+  },
+  {
+   "id": "R03765",
+   "template": "alt_precedence",
+   "activities": [
+    "Vendor creates invoice",
+    "Clear Invoice"
+   ],
+   "support": 0.965,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R03772",
+   "template": "alt_precedence",
+   "activities": [
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "support": 0.9515,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R03776",
+   "template": "alt_precedence",
+   "activities": [
+    "Vendor creates invoice",
+    "Remove Payment Block"
+   ],
+   "support": 0.9844,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R04796",
+   "template": "responded_existence",
+   "activities": [
+    "Change Quantity",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9851,
+   "coverage": 0.0693
+  },
+  {
+   "id": "R04877",
+   "template": "responded_existence",
+   "activities": [
+    "Clear Invoice",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9967,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R04886",
+   "template": "responded_existence",
+   "activities": [
+    "Clear Invoice",
+    "Vendor creates invoice"
+   ],
+   "support": 0.9978,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R05012",
+   "template": "responded_existence",
+   "activities": [
+    "Receive Order Confirmation",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9621,
+   "coverage": 0.1426
+  },
+  {
+   "id": "R05048",
+   "template": "responded_existence",
+   "activities": [
+    "Record Goods Receipt",
+    "Vendor creates invoice"
+   ],
+   "support": 0.9608,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R05067",
+   "template": "responded_existence",
+   "activities": [
+    "Record Invoice Receipt",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9985,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R05107",
+   "template": "responded_existence",
+   "activities": [
+    "Release Purchase Order",
+    "Change Approval for Purchase Order"
+   ],
+   "support": 1.0,
+   "coverage": 0.0018
+  },
+  {
+   "id": "R05176",
+   "template": "responded_existence",
+   "activities": [
+    "Remove Payment Block",
+    "Record Invoice Receipt"
+   ],
+   "support": 0.9993,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R05329",
+   "template": "not_co_existence",
+   "activities": [
+    "Cancel Goods Receipt",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0071
+  },
+  {
+   "id": "R05346",
+   "template": "not_co_existence",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Block Purchase Order Item"
+   ],
+   "support": 0.9949,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R05361",
+   "template": "not_co_existence",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Reactivate Purchase Order Item"
+   ],
+   "support": 0.9933,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R05370",
+   "template": "not_co_existence",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Update Order Confirmation"
+   ],
+   "support": 0.9968,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R05404",
+   "template": "not_co_existence",
+   "activities": [
+    "Change Approval for Purchase Order",
+    "Change Currency"
+   ],
+   "support": 0.9996,
+   "coverage": 0.0103
+  },
+  {
+   "id": "R05518",
+   "template": "not_co_existence",
+   "activities": [
+    "Change Price",
+    "Change payment term"
+   ],
+   "support": 0.9997,
+   "coverage": 0.044
+  },
+  {
+   "id": "R05528",
+   "template": "not_co_existence",
+   "activities": [
+    "Change Price",
+    "Release Purchase Order"
+   ],
+   "support": 0.9877,
+   "coverage": 0.044
+  },
+  {
+   "id": "R05545",
+   "template": "not_co_existence",
+   "activities": [
+    "Change Quantity",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0693
+  },
+  {
+   "id": "R05572",
+   "template": "not_co_existence",
+   "activities": [
+    "Change Storage Location",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0014
+  },
+  {
+   "id": "R05616",
+   "template": "not_co_existence",
+   "activities": [
+    "Clear Invoice",
+    "Block Purchase Order Item"
+   ],
+   "support": 0.9991,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R05617",
+   "template": "not_co_existence",
+   "activities": [
+    "Clear Invoice",
+    "Cancel Goods Receipt"
+   ],
+   "support": 0.9943,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R05712",
+   "template": "not_co_existence",
+   "activities": [
+    "Delete Purchase Order Item",
+    "Reactivate Purchase Order Item"
+   ],
+   "support": 0.9611,
+   "coverage": 0.0354
+  },
+  {
+   "id": "R05721",
+   "template": "not_co_existence",
+   "activities": [
+    "Delete Purchase Order Item",
+    "Update Order Confirmation"
+   ],
+   "support": 0.9984,
+   "coverage": 0.0354
+  },
+  {
+   "id": "R05731",
+   "template": "not_co_existence",
+   "activities": [
+    "Reactivate Purchase Order Item",
+    "Change Final Invoice Indicator"
+   ],
+   "support": 1.0,
+   "coverage": 0.0023
+  },
+  {
+   "id": "R05779",
+   "template": "not_co_existence",
+   "activities": [
+    "Record Goods Receipt",
+    "Cancel Goods Receipt"
+   ],
+   "support": 0.9964,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R05799",
+   "template": "not_co_existence",
+   "activities": [
+    "Record Goods Receipt",
+    "Release Purchase Requisition"
+   ],
+   "support": 0.9983,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R05802",
+   "template": "not_co_existence",
+   "activities": [
+    "Record Goods Receipt",
+    "Update Order Confirmation"
+   ],
+   "support": 0.999,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R05837",
+   "template": "not_co_existence",
+   "activities": [
+    "Record Subsequent Invoice",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.0007
+  },
+  {
+   "id": "R05891",
+   "template": "not_co_existence",
+   "activities": [
+    "Release Purchase Requisition",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.002
+  },
+  {
+   "id": "R05919",
+   "template": "not_co_existence",
+   "activities": [
+    "Remove Payment Block",
+    "Change Delivery Indicator"
+   ],
+   "support": 0.9832,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R05934",
+   "template": "not_co_existence",
+   "activities": [
+    "Remove Payment Block",
+    "Release Purchase Order"
+   ],
+   "support": 0.9965,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R05945",
+   "template": "not_co_existence",
+   "activities": [
+    "Set Payment Block",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.0002
+  },
+  {
+   "id": "R05974",
+   "template": "not_co_existence",
+   "activities": [
+    "Update Order Confirmation",
+    "Change Final Invoice Indicator"
+   ],
+   "support": 1.0,
+   "coverage": 0.001
+  },
+  {
+   "id": "R05978",
+   "template": "not_co_existence",
+   "activities": [
+    "Update Order Confirmation",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.001
+  },
+  {
+   "id": "R06085",
+   "template": "not_succession",
+   "activities": [
+    "Cancel Goods Receipt",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0071
+  },
+  {
+   "id": "R06102",
+   "template": "not_succession",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Block Purchase Order Item"
+   ],
+   "support": 0.9997,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R06108",
+   "template": "not_succession",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Change Final Invoice Indicator"
+   ],
+   "support": 1.0,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R06121",
+   "template": "not_succession",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Record Subsequent Invoice"
+   ],
+   "support": 0.9961,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R06127",
+   "template": "not_succession",
+   "activities": [
+    "Cancel Invoice Receipt",
+    "Vendor creates debit memo"
+   ],
+   "support": 0.9909,
+   "coverage": 0.0269
+  },
+  {
+   "id": "R06160",
+   "template": "not_succession",
+   "activities": [
+    "Change Approval for Purchase Order",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.0103
+  },
+  {
+   "id": "R06215",
+   "template": "not_succession",
+   "activities": [
+    "Change Delivery Indicator",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.0088
+  },
+  {
+   "id": "R06220",
+   "template": "not_succession",
+   "activities": [
+    "Change Delivery Indicator",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0088
+  },
+  {
+   "id": "R06268",
+   "template": "not_succession",
+   "activities": [
+    "Change Price",
+    "Change Approval for Purchase Order"
+   ],
+   "support": 0.9941,
+   "coverage": 0.044
+  },
+  {
+   "id": "R06285",
+   "template": "not_succession",
+   "activities": [
+    "Change Price",
+    "Release Purchase Requisition"
+   ],
+   "support": 1.0,
+   "coverage": 0.044
+  },
+  {
+   "id": "R06306",
+   "template": "not_succession",
+   "activities": [
+    "Change Quantity",
+    "Reactivate Purchase Order Item"
+   ],
+   "support": 0.9924,
+   "coverage": 0.0693
+  },
+  {
+   "id": "R06325",
+   "template": "not_succession",
+   "activities": [
+    "Change Storage Location",
+    "Change Final Invoice Indicator"
+   ],
+   "support": 1.0,
+   "coverage": 0.0014
+  },
+  {
+   "id": "R06384",
+   "template": "not_succession",
+   "activities": [
+    "Clear Invoice",
+    "Create Purchase Order Item"
+   ],
+   "support": 1.0,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R06388",
+   "template": "not_succession",
+   "activities": [
+    "Clear Invoice",
+    "Receive Order Confirmation"
+   ],
+   "support": 1.0,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R06389",
+   "template": "not_succession",
+   "activities": [
+    "Clear Invoice",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9988,
+   "coverage": 0.7949
+  },
+  {
+   "id": "R06453",
+   "template": "not_succession",
+   "activities": [
+    "Delete Purchase Order Item",
+    "Block Purchase Order Item"
+   ],
+   "support": 0.9999,
+   "coverage": 0.0354
+  },
+  {
+   "id": "R06458",
+   "template": "not_succession",
+   "activities": [
+    "Delete Purchase Order Item",
+    "Change Currency"
+   ],
+   "support": 0.9999,
+   "coverage": 0.0354
+  },
+  {
+   "id": "R06480",
+   "template": "not_succession",
+   "activities": [
+    "Reactivate Purchase Order Item",
+    "Block Purchase Order Item"
+   ],
+   "support": 0.9776,
+   "coverage": 0.0023
+  },
+  {
+   "id": "R06487",
+   "template": "not_succession",
+   "activities": [
+    "Reactivate Purchase Order Item",
+    "Change Final Invoice Indicator"
+   ],
+   "support": 1.0,
+   "coverage": 0.0023
+  },
+  {
+   "id": "R06538",
+   "template": "not_succession",
+   "activities": [
+    "Record Goods Receipt",
+    "Change Approval for Purchase Order"
+   ],
+   "support": 0.9991,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R06545",
+   "template": "not_succession",
+   "activities": [
+    "Record Goods Receipt",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R06547",
+   "template": "not_succession",
+   "activities": [
+    "Record Goods Receipt",
+    "Create Purchase Order Item"
+   ],
+   "support": 1.0,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R06550",
+   "template": "not_succession",
+   "activities": [
+    "Record Goods Receipt",
+    "Reactivate Purchase Order Item"
+   ],
+   "support": 0.9998,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R06551",
+   "template": "not_succession",
+   "activities": [
+    "Record Goods Receipt",
+    "Receive Order Confirmation"
+   ],
+   "support": 0.9997,
+   "coverage": 0.9441
+  },
+  {
+   "id": "R06575",
+   "template": "not_succession",
+   "activities": [
+    "Record Invoice Receipt",
+    "Create Purchase Requisition Item"
+   ],
+   "support": 1.0,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R06582",
+   "template": "not_succession",
+   "activities": [
+    "Record Invoice Receipt",
+    "Release Purchase Requisition"
+   ],
+   "support": 1.0,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R06587",
+   "template": "not_succession",
+   "activities": [
+    "Record Invoice Receipt",
+    "Vendor creates invoice"
+   ],
+   "support": 0.9804,
+   "coverage": 0.9131
+  },
+  {
+   "id": "R06626",
+   "template": "not_succession",
+   "activities": [
+    "Release Purchase Order",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0018
+  },
+  {
+   "id": "R06669",
+   "template": "not_succession",
+   "activities": [
+    "Remove Payment Block",
+    "Block Purchase Order Item"
+   ],
+   "support": 1.0,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R06672",
+   "template": "not_succession",
+   "activities": [
+    "Remove Payment Block",
+    "Cancel Subsequent Invoice"
+   ],
+   "support": 0.998,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R06674",
+   "template": "not_succession",
+   "activities": [
+    "Remove Payment Block",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R06687",
+   "template": "not_succession",
+   "activities": [
+    "Remove Payment Block",
+    "Record Goods Receipt"
+   ],
+   "support": 0.9874,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R06692",
+   "template": "not_succession",
+   "activities": [
+    "Remove Payment Block",
+    "Set Payment Block"
+   ],
+   "support": 0.9997,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R06695",
+   "template": "not_succession",
+   "activities": [
+    "Remove Payment Block",
+    "Vendor creates invoice"
+   ],
+   "support": 0.9923,
+   "coverage": 0.2458
+  },
+  {
+   "id": "R06701",
+   "template": "not_succession",
+   "activities": [
+    "Set Payment Block",
+    "Change Currency"
+   ],
+   "support": 1.0,
+   "coverage": 0.0002
+  },
+  {
+   "id": "R06707",
+   "template": "not_succession",
+   "activities": [
+    "Set Payment Block",
+    "Change payment term"
+   ],
+   "support": 1.0,
+   "coverage": 0.0002
+  },
+  {
+   "id": "R06781",
+   "template": "not_succession",
+   "activities": [
+    "Vendor creates invoice",
+    "Change Approval for Purchase Order"
+   ],
+   "support": 0.9989,
+   "coverage": 0.9084
+  },
+  {
+   "id": "R06786",
+   "template": "not_succession",
+   "activities": [
+    "Vendor creates invoice",
+    "Change Quantity"
+   ],
+   "support": 0.98,
+   "coverage": 0.9084
+  },
+  {
+   "id": "R06791",
+   "template": "not_succession",
+   "activities": [
+    "Vendor creates invoice",
+    "Create Purchase Requisition Item"
+   ],
+   "support": 0.9997,
+   "coverage": 0.9084
+  }
+ ]
+}

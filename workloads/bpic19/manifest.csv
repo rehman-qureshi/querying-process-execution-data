@@ -1,0 +1,7 @@
+n_rules,repo_file,questions_file,answers_file,mean_C,median_C,min_C,max_C,total_constraints
+100,repo_0100.json,questions_0100.json,answers_0100.csv,4.9,3,1,21,490
+250,repo_0250.json,questions_0250.json,answers_0250.csv,6.29,4,1,26,629
+500,repo_0500.json,questions_0500.json,answers_0500.csv,8.08,6,1,35,808
+750,repo_0750.json,questions_0750.json,answers_0750.csv,9.72,6,1,43,972
+1000,repo_1000.json,questions_1000.json,answers_1000.csv,11.13,8,1,49,1113
+1104,repo_1104.json,questions_1104.json,answers_1104.csv,11.8,9,2,50,1180

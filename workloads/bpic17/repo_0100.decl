@@ -1,0 +1,124 @@
+activity A_Accepted
+activity A_Cancelled
+activity A_Complete
+activity A_Concept
+activity A_Create Application
+activity A_Denied
+activity A_Incomplete
+activity A_Pending
+activity A_Submitted
+activity A_Validating
+activity O_Accepted
+activity O_Cancelled
+activity O_Create Offer
+activity O_Created
+activity O_Refused
+activity O_Returned
+activity O_Sent (mail and online)
+activity O_Sent (online only)
+activity W_Assess potential fraud
+activity W_Call after offers
+activity W_Call incomplete files
+activity W_Complete application
+activity W_Handle leads
+activity W_Validate application
+Response[A_Cancelled, O_Cancelled] | | |
+Response[A_Create Application, A_Concept] | | |
+Response[A_Submitted, A_Complete] | | |
+Response[A_Submitted, A_Concept] | | |
+Response[A_Submitted, O_Create Offer] | | |
+Response[A_Submitted, O_Created] | | |
+Response[O_Accepted, A_Pending] | | |
+Response[O_Create Offer, O_Created] | | |
+Alternate Response[A_Concept, A_Complete] | | |
+Alternate Response[A_Create Application, A_Complete] | | |
+Alternate Response[A_Denied, O_Refused] | | |
+Alternate Response[A_Submitted, O_Create Offer] | | |
+Alternate Response[O_Accepted, A_Pending] | | |
+Alternate Response[W_Complete application, A_Complete] | | |
+Alternate Response[W_Handle leads, O_Sent (mail and online)] | | |
+Chain Response[A_Denied, O_Refused] | | |
+Chain Response[O_Accepted, A_Pending] | | |
+Precedence[A_Accepted, A_Incomplete] | | |
+Precedence[A_Complete, W_Call incomplete files] | | |
+Precedence[A_Concept, A_Incomplete] | | |
+Precedence[A_Concept, A_Validating] | | |
+Precedence[A_Concept, O_Cancelled] | | |
+Precedence[A_Concept, W_Complete application] | | |
+Precedence[A_Create Application, A_Denied] | | |
+Precedence[A_Create Application, A_Incomplete] | | |
+Precedence[A_Create Application, O_Accepted] | | |
+Precedence[A_Denied, O_Refused] | | |
+Precedence[A_Validating, A_Incomplete] | | |
+Precedence[A_Validating, W_Call incomplete files] | | |
+Precedence[O_Accepted, A_Pending] | | |
+Precedence[O_Create Offer, O_Accepted] | | |
+Precedence[O_Create Offer, O_Returned] | | |
+Precedence[O_Create Offer, W_Call incomplete files] | | |
+Precedence[O_Created, A_Validating] | | |
+Precedence[O_Created, O_Cancelled] | | |
+Precedence[O_Created, W_Call incomplete files] | | |
+Precedence[O_Created, W_Complete application] | | |
+Precedence[O_Returned, A_Pending] | | |
+Precedence[O_Returned, W_Call incomplete files] | | |
+Precedence[O_Sent (mail and online), O_Accepted] | | |
+Precedence[O_Sent (mail and online), O_Cancelled] | | |
+Precedence[O_Sent (mail and online), O_Refused] | | |
+Precedence[O_Sent (mail and online), O_Returned] | | |
+Alternate Precedence[A_Concept, A_Pending] | | |
+Alternate Precedence[A_Create Application, A_Concept] | | |
+Alternate Precedence[A_Create Application, W_Call incomplete files] | | |
+Alternate Precedence[A_Submitted, W_Handle leads] | | |
+Alternate Precedence[A_Validating, A_Incomplete] | | |
+Alternate Precedence[A_Validating, A_Pending] | | |
+Alternate Precedence[A_Validating, O_Returned] | | |
+Alternate Precedence[O_Accepted, A_Pending] | | |
+Alternate Precedence[O_Create Offer, A_Pending] | | |
+Alternate Precedence[O_Created, A_Cancelled] | | |
+Alternate Precedence[O_Created, O_Sent (online only)] | | |
+Alternate Precedence[O_Created, W_Complete application] | | |
+Alternate Precedence[O_Sent (mail and online), A_Complete] | | |
+Alternate Precedence[O_Sent (mail and online), O_Accepted] | | |
+Alternate Precedence[O_Sent (mail and online), W_Complete application] | | |
+Chain Precedence[A_Concept, A_Accepted] | | |
+Chain Precedence[A_Submitted, W_Handle leads] | | |
+Chain Precedence[O_Accepted, A_Pending] | | |
+Chain Precedence[O_Created, O_Sent (online only)] | | |
+Responded Existence[A_Cancelled, A_Create Application] | | |
+Responded Existence[A_Denied, O_Refused] | | |
+Responded Existence[A_Incomplete, O_Create Offer] | | |
+Responded Existence[A_Pending, A_Accepted] | | |
+Responded Existence[O_Refused, A_Complete] | | |
+Responded Existence[O_Refused, A_Concept] | | |
+Responded Existence[O_Refused, O_Sent (mail and online)] | | |
+Responded Existence[W_Call incomplete files, O_Create Offer] | | |
+Responded Existence[W_Complete application, A_Accepted] | | |
+Responded Existence[W_Complete application, A_Complete] | | |
+Responded Existence[W_Complete application, A_Concept] | | |
+Responded Existence[W_Validate application, A_Concept] | | |
+Responded Existence[W_Validate application, O_Returned] | | |
+Not Co-Existence[A_Denied, W_Assess potential fraud] | | |
+Not Co-Existence[A_Incomplete, W_Assess potential fraud] | | |
+Not Co-Existence[O_Accepted, W_Assess potential fraud] | | |
+Not Co-Existence[O_Returned, W_Call after offers] | | |
+Not Succession[A_Accepted, W_Handle leads] | | |
+Not Succession[A_Cancelled, W_Validate application] | | |
+Not Succession[A_Complete, W_Complete application] | | |
+Not Succession[A_Incomplete, W_Complete application] | | |
+Not Succession[A_Pending, A_Submitted] | | |
+Not Succession[A_Pending, O_Sent (mail and online)] | | |
+Not Succession[A_Pending, W_Call incomplete files] | | |
+Not Succession[A_Pending, W_Handle leads] | | |
+Not Succession[O_Accepted, W_Call after offers] | | |
+Not Succession[O_Cancelled, A_Cancelled] | | |
+Not Succession[O_Cancelled, A_Complete] | | |
+Not Succession[O_Cancelled, W_Handle leads] | | |
+Not Succession[O_Created, A_Create Application] | | |
+Not Succession[O_Refused, W_Call incomplete files] | | |
+Not Succession[O_Returned, O_Sent (online only)] | | |
+Not Succession[O_Sent (mail and online), O_Sent (online only)] | | |
+Not Succession[W_Call after offers, O_Sent (online only)] | | |
+Not Succession[W_Call incomplete files, A_Concept] | | |
+Not Succession[W_Complete application, O_Sent (online only)] | | |
+Not Succession[W_Validate application, A_Concept] | | |
+Not Succession[W_Validate application, W_Complete application] | | |
